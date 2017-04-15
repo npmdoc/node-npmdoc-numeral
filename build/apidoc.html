@@ -135,6 +135,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.numeral.toString">
+            function <span class="apidocSignatureSpan">numeral.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.numeral.validate">
             function <span class="apidocSignatureSpan">numeral.</span>validate
             <span class="apidocSignatureSpan">(val, culture)</span>
@@ -368,136 +377,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.numeral.numeral">module numeral.numeral</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.numeral.numeral.numeral">
-            function <span class="apidocSignatureSpan">numeral.</span>numeral
-            <span class="apidocSignatureSpan">(input)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.numeral.numeral.defaultFormat">
-            function <span class="apidocSignatureSpan">numeral.numeral.</span>defaultFormat
-            <span class="apidocSignatureSpan">(format)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.numeral.numeral.isNumeral">
-            function <span class="apidocSignatureSpan">numeral.numeral.</span>isNumeral
-            <span class="apidocSignatureSpan">(obj)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.numeral.numeral.locale">
-            function <span class="apidocSignatureSpan">numeral.numeral.</span>locale
-            <span class="apidocSignatureSpan">(key)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.numeral.numeral.localeData">
-            function <span class="apidocSignatureSpan">numeral.numeral.</span>localeData
-            <span class="apidocSignatureSpan">(key)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.numeral.numeral.nullFormat">
-            function <span class="apidocSignatureSpan">numeral.numeral.</span>nullFormat
-            <span class="apidocSignatureSpan">(format)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.numeral.numeral.register">
-            function <span class="apidocSignatureSpan">numeral.numeral.</span>register
-            <span class="apidocSignatureSpan">(type, name, format)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.numeral.numeral.reset">
-            function <span class="apidocSignatureSpan">numeral.numeral.</span>reset
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.numeral.numeral.validate">
-            function <span class="apidocSignatureSpan">numeral.numeral.</span>validate
-            <span class="apidocSignatureSpan">(val, culture)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.numeral.numeral.zeroFormat">
-            function <span class="apidocSignatureSpan">numeral.numeral.</span>zeroFormat
-            <span class="apidocSignatureSpan">(format)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">numeral.numeral.</span>_</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">numeral.numeral.</span>fn</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">numeral.numeral.</span>formats</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">numeral.numeral.</span>locales</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">numeral.numeral.</span>options</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">numeral.numeral.</span>version</span>
-
-        </li>
-
-    </ol></li>
-
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -580,23 +459,7 @@ regexps.unformat;
     <li>description and source-code<pre class="apidocCodePre">isNumeral = function (obj) {
     return obj instanceof Numeral;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-    numeral = function(input) {
-var value,
-    kind,
-    unformatFunction,
-    regexp;
-
-if (numeral.<span class="apidocCodeKeywordSpan">isNumeral</span>(input)) {
-    value = input.value();
-} else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
-    value = 0;
-} else if (input === null || _.isNaN(input)) {
-    value = null;
-} else if (typeof input === &#x27;string&#x27;) {
-    if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -615,23 +478,7 @@ if (numeral.<span class="apidocCodeKeywordSpan">isNumeral</span>(input)) {
 
     return options.currentLocale;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-}
-
-//get the decimal and thousands separator from numeral.localeData
-try {
-    //check if the culture is understood by numeral. if not, default it to current locale
-    localeData = numeral.localeData(culture);
-} catch (e) {
-    localeData = numeral.localeData(numeral.<span class="apidocCodeKeywordSpan">locale</span>());
-}
-
-//setup the delimiters and currency symbol based on culture/locale
-_currSymbol = localeData.currency.symbol;
-_abbrObj = localeData.abbreviations;
-_decimalSep = localeData.delimiters.decimal;
-if (localeData.delimiters.thousands === &#x27;.&#x27;) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -656,23 +503,7 @@ if (localeData.delimiters.thousands === &#x27;.&#x27;) {
 
     return locales[key];
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-if (val === &#x27;&#x27;) {
-    return false;
-}
-
-//get the decimal and thousands separator from numeral.localeData
-try {
-    //check if the culture is understood by numeral. if not, default it to current locale
-    localeData = numeral.<span class="apidocCodeKeywordSpan">localeData</span>(culture);
-} catch (e) {
-    localeData = numeral.localeData(numeral.locale());
-}
-
-//setup the delimiters and currency symbol based on culture/locale
-_currSymbol = localeData.currency.symbol;
-_abbrObj = localeData.abbreviations;
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -745,6 +576,21 @@ string)`
     for (var property in defaults) {
         options[property] = defaults[property];
     }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.numeral.toString" id="apidoc.element.numeral.toString">
+        function <span class="apidocSignatureSpan">numeral.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return toString;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -901,23 +747,7 @@ string)`
         return accum &#x3e; mn ? accum : mn;
     }, 1);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-    this._value = _.reduce([value], cback, Math.round(this._value * corrFactor)) / corrFactor;
-
-    return this;
-},
-multiply: function(value) {
-    function cback(accum, curr, currI, O) {
-        var corrFactor = _.<span class="apidocCodeKeywordSpan">correctionFactor</span>(accum, curr);
-        return Math.round(accum * corrFactor) * Math.round(curr * corrFactor) / Math.round(corrFactor * corrFactor);
-    }
-
-    this._value = _.reduce([this._value, value], cback, 1);
-
-    return this;
-},
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -932,23 +762,7 @@ multiply: function(value) {
     <li>description and source-code<pre class="apidocCodePre">includes = function (string, search) {
     return string.indexOf(search) !== -1;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-// make sure we never format a null value
-value = value || 0;
-
-abs = Math.abs(value);
-
-// see if we should use parentheses for negative number or if we should prefix with a sign
-// if both are present we default to parentheses
-if (numeral._.<span class="apidocCodeKeywordSpan">includes</span>(format, &#x27;(&#x27;)) {
-    negP = true;
-    format = format.replace(/[\(|\)]/g, &#x27;&#x27;);
-} else if (numeral._.includes(format, &#x27;+&#x27;) || numeral._.includes(format, &#x27;-&#x27;)) {
-    signed = numeral._.includes(format, &#x27;+&#x27;) ? format.indexOf(&#x27;+&#x27;) : value &#x3c; 0 ? format.indexOf(&#x27;-&#
-x27;) : -1;
-    format = format.replace(/[\+|\-]/g, &#x27;&#x27;);
-}
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -978,23 +792,7 @@ x27;) : -1;
     <li>description and source-code<pre class="apidocCodePre">isNaN = function (value) {
     return typeof value === &#x27;number&#x27; &#x26;&#x26; isNaN(value);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    unformatFunction,
-    regexp;
-
-if (numeral.isNumeral(input)) {
-    value = input.value();
-} else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
-    value = 0;
-} else if (input === null || _.<span class="apidocCodeKeywordSpan">isNaN</span>(input)) {
-    value = null;
-} else if (typeof input === &#x27;string&#x27;) {
-    if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
-        value = 0;
-    } else if (options.nullFormat &#x26;&#x26; input === options.nullFormat || !input.replace(/[^0-9]+/g, &#x27;&#x27;).length) {
-        value = null;
-    } else {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -1011,23 +809,7 @@ if (numeral.isNumeral(input)) {
 
     return parts.length &#x3c; 2 ? 1 : Math.pow(10, parts[1].length);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
- * multiplier that must be used to normalize an operation involving
- * all of them.
- */
-correctionFactor: function () {
-    var args = Array.prototype.slice.call(arguments);
-
-    return args.reduce(function(accum, next) {
-        var mn = _.<span class="apidocCodeKeywordSpan">multiplier</span>(next);
-        return accum &#x3e; mn ? accum : mn;
-    }, 1);
-},
-/**
- * Implementation of toFixed() that treats floats more like decimals
- *
- * Fixes binary rounding issues (eg. (0.615).toFixed(2) === &#x27;0.61&#x27;) that present
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -1206,23 +988,7 @@ correctionFactor: function () {
     }
     return value;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
- * Given a variable number of arguments, returns the maximum
- * multiplier that must be used to normalize an operation involving
- * all of them.
- */
-correctionFactor: function () {
-    var args = Array.prototype.slice.call(arguments);
-
-    return args.<span class="apidocCodeKeywordSpan">reduce</span>(function(accum, next) {
-        var mn = _.multiplier(next);
-        return accum &#x3e; mn ? accum : mn;
-    }, 1);
-},
-/**
- * Implementation of toFixed() that treats floats more like decimals
- *
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -1318,24 +1084,7 @@ correctionFactor: function () {
 
     return output;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-            thousands = format.indexOf(&#x27;,&#x27;);
-            leadingCount = (format.split(&#x27;.&#x27;)[0].split(&#x27;,&#x27;)[0].match(/0/g) || []).length;
-
-            if (precision) {
-if (numeral._.includes(precision, &#x27;[&#x27;)) {
-    precision = precision.replace(&#x27;]&#x27;, &#x27;&#x27;);
-    precision = precision.split(&#x27;[&#x27;);
-    decimal = numeral._.<span class="apidocCodeKeywordSpan">toFixed</span>(value, (precision[0].length + precision[1].length), roundingFunction
-, precision[1].length);
-} else {
-    decimal = numeral._.toFixed(value, precision.length, roundingFunction);
-}
-
-int = decimal.split(&#x27;.&#x27;)[0];
-
-if (numeral._.includes(decimal, &#x27;.&#x27;)) {
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -1527,23 +1276,7 @@ Bug fix: Fix bug while unformatting ordinals
 
     return this;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        platform: &#x27;Windows 10&#x27;
-    }
-};
-
-process.env.SAUCE_USERNAME = &#x27;numeraljs&#x27;;
-process.env.SAUCE_ACCESS_KEY = &#x27;5506968c-cfdc-4797-ba75-294620ad475f&#x27;;
-
-config.<span class="apidocCodeKeywordSpan">set</span>({
-    reporters: [
-        &#x27;mocha&#x27;,
-        &#x27;saucelabs&#x27;
-    ],
-    browserDisconnectTimeout : 10000,
-    browserNoActivityTimeout: 120000,
-    browserDisconnectTolerance : 1,
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -1566,22 +1299,7 @@ config.<span class="apidocCodeKeywordSpan">set</span>({
 
     return this;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        }
-
-        this._value = _.reduce([this._value, value], cback);
-
-        return this;
-    },
-    difference: function(value) {
-        return Math.abs(numeral(this._value).<span class="apidocCodeKeywordSpan">subtract</span>(value).value());
-    }
-};
-
-/************************************
-    Default Locale &#x26;&#x26; Format
-************************************/
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -1596,406 +1314,8 @@ config.<span class="apidocCodeKeywordSpan">set</span>({
     <li>description and source-code<pre class="apidocCodePre">value = function () {
     return this._value;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    numeral = function(input) {
-var value,
-    kind,
-    unformatFunction,
-    regexp;
-
-if (numeral.isNumeral(input)) {
-    value = input.<span class="apidocCodeKeywordSpan">value</span>();
-} else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
-    value = 0;
-} else if (input === null || _.isNaN(input)) {
-    value = null;
-} else if (typeof input === &#x27;string&#x27;) {
-    if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
-        value = 0;
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.numeral.numeral" id="apidoc.module.numeral.numeral">module numeral.numeral</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.numeral.numeral.numeral" id="apidoc.element.numeral.numeral.numeral">
-        function <span class="apidocSignatureSpan">numeral.</span>numeral
-        <span class="apidocSignatureSpan">(input)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">numeral = function (input) {
-    var value,
-        kind,
-        unformatFunction,
-        regexp;
-
-    if (numeral.isNumeral(input)) {
-        value = input.value();
-    } else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
-        value = 0;
-    } else if (input === null || _.isNaN(input)) {
-        value = null;
-    } else if (typeof input === &#x27;string&#x27;) {
-        if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
-            value = 0;
-        } else if (options.nullFormat &#x26;&#x26; input === options.nullFormat || !input.replace(/[^0-9]+/g, &#x27;&#x27;).length) {
-            value = null;
-        } else {
-            for (kind in formats) {
-                regexp = typeof formats[kind].regexps.unformat === &#x27;function&#x27; ? formats[kind].regexps.unformat() : formats[kind].
-regexps.unformat;
-
-                if (regexp &#x26;&#x26; input.match(regexp)) {
-                    unformatFunction = formats[kind].unformat;
-
-                    break;
-                }
-            }
-
-            unformatFunction = unformatFunction || numeral._.stringToNumber;
-
-            value = unformatFunction(input);
-        }
-    } else {
-        value = Number(input)|| null;
-    }
-
-    return new Numeral(input, value);
-}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.numeral.numeral.defaultFormat" id="apidoc.element.numeral.numeral.defaultFormat">
-        function <span class="apidocSignatureSpan">numeral.numeral.</span>defaultFormat
-        <span class="apidocSignatureSpan">(format)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">defaultFormat = function (format) {
-    options.defaultFormat = typeof(format) === &#x27;string&#x27; ? format : &#x27;0.0&#x27;;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.numeral.numeral.isNumeral" id="apidoc.element.numeral.numeral.isNumeral">
-        function <span class="apidocSignatureSpan">numeral.numeral.</span>isNumeral
-        <span class="apidocSignatureSpan">(obj)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">isNumeral = function (obj) {
-    return obj instanceof Numeral;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-    numeral = function(input) {
-var value,
-    kind,
-    unformatFunction,
-    regexp;
-
-if (numeral.<span class="apidocCodeKeywordSpan">isNumeral</span>(input)) {
-    value = input.value();
-} else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
-    value = 0;
-} else if (input === null || _.isNaN(input)) {
-    value = null;
-} else if (typeof input === &#x27;string&#x27;) {
-    if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.numeral.numeral.locale" id="apidoc.element.numeral.numeral.locale">
-        function <span class="apidocSignatureSpan">numeral.numeral.</span>locale
-        <span class="apidocSignatureSpan">(key)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">locale = function (key) {
-    if (key) {
-        options.currentLocale = key.toLowerCase();
-    }
-
-    return options.currentLocale;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-}
-
-//get the decimal and thousands separator from numeral.localeData
-try {
-    //check if the culture is understood by numeral. if not, default it to current locale
-    localeData = numeral.localeData(culture);
-} catch (e) {
-    localeData = numeral.localeData(numeral.<span class="apidocCodeKeywordSpan">locale</span>());
-}
-
-//setup the delimiters and currency symbol based on culture/locale
-_currSymbol = localeData.currency.symbol;
-_abbrObj = localeData.abbreviations;
-_decimalSep = localeData.delimiters.decimal;
-if (localeData.delimiters.thousands === &#x27;.&#x27;) {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.numeral.numeral.localeData" id="apidoc.element.numeral.numeral.localeData">
-        function <span class="apidocSignatureSpan">numeral.numeral.</span>localeData
-        <span class="apidocSignatureSpan">(key)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">localeData = function (key) {
-    if (!key) {
-        return locales[options.currentLocale];
-    }
-
-    key = key.toLowerCase();
-
-    if (!locales[key]) {
-        throw new Error(&#x27;Unknown locale : &#x27; + key);
-    }
-
-    return locales[key];
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-if (val === &#x27;&#x27;) {
-    return false;
-}
-
-//get the decimal and thousands separator from numeral.localeData
-try {
-    //check if the culture is understood by numeral. if not, default it to current locale
-    localeData = numeral.<span class="apidocCodeKeywordSpan">localeData</span>(culture);
-} catch (e) {
-    localeData = numeral.localeData(numeral.locale());
-}
-
-//setup the delimiters and currency symbol based on culture/locale
-_currSymbol = localeData.currency.symbol;
-_abbrObj = localeData.abbreviations;
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.numeral.numeral.nullFormat" id="apidoc.element.numeral.numeral.nullFormat">
-        function <span class="apidocSignatureSpan">numeral.numeral.</span>nullFormat
-        <span class="apidocSignatureSpan">(format)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">nullFormat = function (format) {
-    options.nullFormat = typeof(format) === &#x27;string&#x27; ? format : null;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.numeral.numeral.register" id="apidoc.element.numeral.numeral.register">
-        function <span class="apidocSignatureSpan">numeral.numeral.</span>register
-        <span class="apidocSignatureSpan">(type, name, format)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">register = function (type, name, format) {
-    name = name.toLowerCase();
-
-    if (this[type + &#x27;s&#x27;][name]) {
-        throw new TypeError(name + &#x27; &#x27; + type + &#x27; already registered.&#x27;);
-    }
-
-    this[type + &#x27;s&#x27;][name] = format;
-
-    return format;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-### 2.0.0
-
-2.0.0 brings a lot of breaking changes and a reorganization of the repo, but also simplifies the api as well as the creating of
-custom formats.
-
-Breaking change / Feature: All formats are now separate files.  This makes it easy to create custom formats, and will also allow
- for custom builds with only certain formats.  (Note: The built numeral.js still contains all formats in the repo).
-
-Breaking change / Feature: All formats and locales are now loaded using `numeral.<span class="apidocCodeKeywordSpan">register</span
->(type, name, {})`
-
-Breaking change: All `language` now renamed to `locale` and standardized to all lowercase filenames
-
-Breaking change: The `locale` function no longer loads locales, it only sets the current locale
-
-Breaking change: The `unformat` function has been removed `numeral().unformat(string)` and now happens on numeral init `numeral(
-string)`
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.numeral.numeral.reset" id="apidoc.element.numeral.numeral.reset">
-        function <span class="apidocSignatureSpan">numeral.numeral.</span>reset
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">reset = function () {
-    for (var property in defaults) {
-        options[property] = defaults[property];
-    }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.numeral.numeral.validate" id="apidoc.element.numeral.numeral.validate">
-        function <span class="apidocSignatureSpan">numeral.numeral.</span>validate
-        <span class="apidocSignatureSpan">(val, culture)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">validate = function (val, culture) {
-    var _decimalSep,
-        _thousandSep,
-        _currSymbol,
-        _valArray,
-        _abbrObj,
-        _thousandRegEx,
-        localeData,
-        temp;
-
-    //coerce val to string
-    if (typeof val !== &#x27;string&#x27;) {
-        val += &#x27;&#x27;;
-
-        if (console.warn) {
-            console.warn(&#x27;Numeral.js: Value is not string. It has been co-erced to: &#x27;, val);
-        }
-    }
-
-    //trim whitespaces from either sides
-    val = val.trim();
-
-    //if val is just digits return true
-    if (!!val.match(/^\d+$/)) {
-        return true;
-    }
-
-    //if val is empty return false
-    if (val === &#x27;&#x27;) {
-        return false;
-    }
-
-    //get the decimal and thousands separator from numeral.localeData
-    try {
-        //check if the culture is understood by numeral. if not, default it to current locale
-        localeData = numeral.localeData(culture);
-    } catch (e) {
-        localeData = numeral.localeData(numeral.locale());
-    }
-
-    //setup the delimiters and currency symbol based on culture/locale
-    _currSymbol = localeData.currency.symbol;
-    _abbrObj = localeData.abbreviations;
-    _decimalSep = localeData.delimiters.decimal;
-    if (localeData.delimiters.thousands === &#x27;.&#x27;) {
-        _thousandSep = &#x27;\\.&#x27;;
-    } else {
-        _thousandSep = localeData.delimiters.thousands;
-    }
-
-    // validating currency symbol
-    temp = val.match(/^[^\d]+/);
-    if (temp !== null) {
-        val = val.substr(1);
-        if (temp[0] !== _currSymbol) {
-            return false;
-        }
-    }
-
-    //validating abbreviation symbol
-    temp = val.match(/[^\d]+$/);
-    if (temp !== null) {
-        val = val.slice(0, -1);
-        if (temp[0] !== _abbrObj.thousand &#x26;&#x26; temp[0] !== _abbrObj.million &#x26;&#x26; temp[0] !== _abbrObj.billion &#x26;&#x26; temp[0] !== _abbrObj
-.trillion) {
-            return false;
-        }
-    }
-
-    _thousandRegEx = new RegExp(_thousandSep + &#x27;{2}&#x27;);
-
-    if (!val.match(/[^\d.,]/g)) {
-        _valArray = val.split(_decimalSep);
-        if (_valArray.length &#x3e; 2) {
-            return false;
-        } else {
-            if (_valArray.length &#x3c; 2) {
-                return ( !! _valArray[0].match(/^\d+.*\d$/) &#x26;&#x26; !_valArray[0].match(_thousandRegEx));
-            } else {
-                if (_valArray[0].length === 1) {
-                    return ( !! _valArray[0].match(/^\d+$/) &#x26;&#x26; !_valArray[0].match(_thousandRegEx) &#x26;&#x26; !! _valArray[1].match(/^\d
-+$/));
-                } else {
-                    return ( !! _valArray[0].match(/^\d+.*\d$/) &#x26;&#x26; !_valArray[0].match(_thousandRegEx) &#x26;&#x26; !! _valArray[1].match(/^\d+$/));
-                }
-            }
-        }
-    }
-
-    return false;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.numeral.numeral.zeroFormat" id="apidoc.element.numeral.numeral.zeroFormat">
-        function <span class="apidocSignatureSpan">numeral.numeral.</span>zeroFormat
-        <span class="apidocSignatureSpan">(format)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">zeroFormat = function (format) {
-    options.zeroFormat = typeof(format) === &#x27;string&#x27; ? format : null;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </div>
