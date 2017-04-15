@@ -1,11 +1,13 @@
 # api documentation for  [numeral (v2.0.6)](http://numeraljs.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-numeral.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-numeral) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-numeral.svg)](https://travis-ci.org/npmdoc/node-npmdoc-numeral)
 #### Format and manipulate numbers.
 
-[![NPM](https://nodei.co/npm/numeral.png?downloads=true)](https://www.npmjs.com/package/numeral)
+[![NPM](https://nodei.co/npm/numeral.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/numeral)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-numeral/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-numeral_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-numeral/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-numeral/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-numeral/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-numeral/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-numeral/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-numeral/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -16,7 +18,6 @@
 {
     "author": {
         "name": "Adam Draper",
-        "email": "adamwdraper@gmail.com",
         "url": "http://github.com/adamwdraper"
     },
     "bugs": {
@@ -69,13 +70,11 @@
     "main": "./numeral.js",
     "maintainers": [
         {
-            "name": "adamwdraper",
-            "email": "adamwdraper@gmail.com"
+            "name": "adamwdraper"
         }
     ],
     "name": "numeral",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/adamwdraper/Numeral-js.git"
@@ -100,6 +99,7 @@
 1.  [function <span class="apidocSignatureSpan">numeral.</span>nullFormat (format)](#apidoc.element.numeral.nullFormat)
 1.  [function <span class="apidocSignatureSpan">numeral.</span>register (type, name, format)](#apidoc.element.numeral.register)
 1.  [function <span class="apidocSignatureSpan">numeral.</span>reset ()](#apidoc.element.numeral.reset)
+1.  [function <span class="apidocSignatureSpan">numeral.</span>toString ()](#apidoc.element.numeral.toString)
 1.  [function <span class="apidocSignatureSpan">numeral.</span>validate (val, culture)](#apidoc.element.numeral.validate)
 1.  [function <span class="apidocSignatureSpan">numeral.</span>zeroFormat (format)](#apidoc.element.numeral.zeroFormat)
 1.  object <span class="apidocSignatureSpan">numeral.</span>_
@@ -131,24 +131,6 @@
 1.  [function <span class="apidocSignatureSpan">numeral.fn.</span>set (value)](#apidoc.element.numeral.fn.set)
 1.  [function <span class="apidocSignatureSpan">numeral.fn.</span>subtract (value)](#apidoc.element.numeral.fn.subtract)
 1.  [function <span class="apidocSignatureSpan">numeral.fn.</span>value ()](#apidoc.element.numeral.fn.value)
-
-#### [module numeral.numeral](#apidoc.module.numeral.numeral)
-1.  [function <span class="apidocSignatureSpan">numeral.</span>numeral (input)](#apidoc.element.numeral.numeral.numeral)
-1.  [function <span class="apidocSignatureSpan">numeral.numeral.</span>defaultFormat (format)](#apidoc.element.numeral.numeral.defaultFormat)
-1.  [function <span class="apidocSignatureSpan">numeral.numeral.</span>isNumeral (obj)](#apidoc.element.numeral.numeral.isNumeral)
-1.  [function <span class="apidocSignatureSpan">numeral.numeral.</span>locale (key)](#apidoc.element.numeral.numeral.locale)
-1.  [function <span class="apidocSignatureSpan">numeral.numeral.</span>localeData (key)](#apidoc.element.numeral.numeral.localeData)
-1.  [function <span class="apidocSignatureSpan">numeral.numeral.</span>nullFormat (format)](#apidoc.element.numeral.numeral.nullFormat)
-1.  [function <span class="apidocSignatureSpan">numeral.numeral.</span>register (type, name, format)](#apidoc.element.numeral.numeral.register)
-1.  [function <span class="apidocSignatureSpan">numeral.numeral.</span>reset ()](#apidoc.element.numeral.numeral.reset)
-1.  [function <span class="apidocSignatureSpan">numeral.numeral.</span>validate (val, culture)](#apidoc.element.numeral.numeral.validate)
-1.  [function <span class="apidocSignatureSpan">numeral.numeral.</span>zeroFormat (format)](#apidoc.element.numeral.numeral.zeroFormat)
-1.  object <span class="apidocSignatureSpan">numeral.numeral.</span>_
-1.  object <span class="apidocSignatureSpan">numeral.numeral.</span>fn
-1.  object <span class="apidocSignatureSpan">numeral.numeral.</span>formats
-1.  object <span class="apidocSignatureSpan">numeral.numeral.</span>locales
-1.  object <span class="apidocSignatureSpan">numeral.numeral.</span>options
-1.  string <span class="apidocSignatureSpan">numeral.numeral.</span>version
 
 
 
@@ -223,23 +205,7 @@ isNumeral = function (obj) {
 ```
 - example usage
 ```shell
-...
-
-    numeral = function(input) {
-var value,
-    kind,
-    unformatFunction,
-    regexp;
-
-if (numeral.isNumeral(input)) {
-    value = input.value();
-} else if (input === 0 || typeof input === 'undefined') {
-    value = 0;
-} else if (input === null || _.isNaN(input)) {
-    value = null;
-} else if (typeof input === 'string') {
-    if (options.zeroFormat && input === options.zeroFormat) {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.numeral.locale"></a>[function <span class="apidocSignatureSpan">numeral.</span>locale (key)](#apidoc.element.numeral.locale)
@@ -255,23 +221,7 @@ locale = function (key) {
 ```
 - example usage
 ```shell
-...
-}
-
-//get the decimal and thousands separator from numeral.localeData
-try {
-    //check if the culture is understood by numeral. if not, default it to current locale
-    localeData = numeral.localeData(culture);
-} catch (e) {
-    localeData = numeral.localeData(numeral.locale());
-}
-
-//setup the delimiters and currency symbol based on culture/locale
-_currSymbol = localeData.currency.symbol;
-_abbrObj = localeData.abbreviations;
-_decimalSep = localeData.delimiters.decimal;
-if (localeData.delimiters.thousands === '.') {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.numeral.localeData"></a>[function <span class="apidocSignatureSpan">numeral.</span>localeData (key)](#apidoc.element.numeral.localeData)
@@ -293,23 +243,7 @@ localeData = function (key) {
 ```
 - example usage
 ```shell
-...
-if (val === '') {
-    return false;
-}
-
-//get the decimal and thousands separator from numeral.localeData
-try {
-    //check if the culture is understood by numeral. if not, default it to current locale
-    localeData = numeral.localeData(culture);
-} catch (e) {
-    localeData = numeral.localeData(numeral.locale());
-}
-
-//setup the delimiters and currency symbol based on culture/locale
-_currSymbol = localeData.currency.symbol;
-_abbrObj = localeData.abbreviations;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.numeral.nullFormat"></a>[function <span class="apidocSignatureSpan">numeral.</span>nullFormat (format)](#apidoc.element.numeral.nullFormat)
@@ -369,6 +303,18 @@ reset = function () {
     for (var property in defaults) {
         options[property] = defaults[property];
     }
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.numeral.toString"></a>[function <span class="apidocSignatureSpan">numeral.</span>toString ()](#apidoc.element.numeral.toString)
+- description and source-code
+```javascript
+toString = function () {
+    return toString;
 }
 ```
 - example usage
@@ -506,23 +452,7 @@ correctionFactor = function () {
 ```
 - example usage
 ```shell
-...
-
-    this._value = _.reduce([value], cback, Math.round(this._value * corrFactor)) / corrFactor;
-
-    return this;
-},
-multiply: function(value) {
-    function cback(accum, curr, currI, O) {
-        var corrFactor = _.correctionFactor(accum, curr);
-        return Math.round(accum * corrFactor) * Math.round(curr * corrFactor) / Math.round(corrFactor * corrFactor);
-    }
-
-    this._value = _.reduce([this._value, value], cback, 1);
-
-    return this;
-},
-...
+n/a
 ```
 
 #### <a name="apidoc.element.numeral._.includes"></a>[function <span class="apidocSignatureSpan">numeral._.</span>includes (string, search)](#apidoc.element.numeral._.includes)
@@ -534,22 +464,7 @@ includes = function (string, search) {
 ```
 - example usage
 ```shell
-...
-// make sure we never format a null value
-value = value || 0;
-
-abs = Math.abs(value);
-
-// see if we should use parentheses for negative number or if we should prefix with a sign
-// if both are present we default to parentheses
-if (numeral._.includes(format, '(')) {
-    negP = true;
-    format = format.replace(/[\(|\)]/g, '');
-} else if (numeral._.includes(format, '+') || numeral._.includes(format, '-')) {
-    signed = numeral._.includes(format, '+') ? format.indexOf('+') : value < 0 ? format.indexOf('-') : -1;
-    format = format.replace(/[\+|\-]/g, '');
-}
-...
+n/a
 ```
 
 #### <a name="apidoc.element.numeral._.insert"></a>[function <span class="apidocSignatureSpan">numeral._.</span>insert (string, subString, start)](#apidoc.element.numeral._.insert)
@@ -573,23 +488,7 @@ isNaN = function (value) {
 ```
 - example usage
 ```shell
-...
-    unformatFunction,
-    regexp;
-
-if (numeral.isNumeral(input)) {
-    value = input.value();
-} else if (input === 0 || typeof input === 'undefined') {
-    value = 0;
-} else if (input === null || _.isNaN(input)) {
-    value = null;
-} else if (typeof input === 'string') {
-    if (options.zeroFormat && input === options.zeroFormat) {
-        value = 0;
-    } else if (options.nullFormat && input === options.nullFormat || !input.replace(/[^0-9]+/g, '').length) {
-        value = null;
-    } else {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.numeral._.multiplier"></a>[function <span class="apidocSignatureSpan">numeral._.</span>multiplier (x)](#apidoc.element.numeral._.multiplier)
@@ -603,23 +502,7 @@ multiplier = function (x) {
 ```
 - example usage
 ```shell
-...
- * multiplier that must be used to normalize an operation involving
- * all of them.
- */
-correctionFactor: function () {
-    var args = Array.prototype.slice.call(arguments);
-
-    return args.reduce(function(accum, next) {
-        var mn = _.multiplier(next);
-        return accum > mn ? accum : mn;
-    }, 1);
-},
-/**
- * Implementation of toFixed() that treats floats more like decimals
- *
- * Fixes binary rounding issues (eg. (0.615).toFixed(2) === '0.61') that present
-...
+n/a
 ```
 
 #### <a name="apidoc.element.numeral._.numberToFormat"></a>[function <span class="apidocSignatureSpan">numeral._.</span>numberToFormat (value, format, roundingFunction)](#apidoc.element.numeral._.numberToFormat)
@@ -792,23 +675,7 @@ reduce = function (array, callback) {
 ```
 - example usage
 ```shell
-...
- * Given a variable number of arguments, returns the maximum
- * multiplier that must be used to normalize an operation involving
- * all of them.
- */
-correctionFactor: function () {
-    var args = Array.prototype.slice.call(arguments);
-
-    return args.reduce(function(accum, next) {
-        var mn = _.multiplier(next);
-        return accum > mn ? accum : mn;
-    }, 1);
-},
-/**
- * Implementation of toFixed() that treats floats more like decimals
- *
-...
+n/a
 ```
 
 #### <a name="apidoc.element.numeral._.stringToNumber"></a>[function <span class="apidocSignatureSpan">numeral._.</span>stringToNumber (string)](#apidoc.element.numeral._.stringToNumber)
@@ -898,23 +765,7 @@ toFixed = function (value, maxDecimals, roundingFunction, optionals) {
 ```
 - example usage
 ```shell
-...
-            thousands = format.indexOf(',');
-            leadingCount = (format.split('.')[0].split(',')[0].match(/0/g) || []).length;
-
-            if (precision) {
-if (numeral._.includes(precision, '[')) {
-    precision = precision.replace(']', '');
-    precision = precision.split('[');
-    decimal = numeral._.toFixed(value, (precision[0].length + precision[1].length), roundingFunction, precision[1].length);
-} else {
-    decimal = numeral._.toFixed(value, precision.length, roundingFunction);
-}
-
-int = decimal.split('.')[0];
-
-if (numeral._.includes(decimal, '.')) {
-...
+n/a
 ```
 
 
@@ -1081,23 +932,7 @@ set = function (value) {
 ```
 - example usage
 ```shell
-...
-        platform: 'Windows 10'
-    }
-};
-
-process.env.SAUCE_USERNAME = 'numeraljs';
-process.env.SAUCE_ACCESS_KEY = '5506968c-cfdc-4797-ba75-294620ad475f';
-
-config.set({
-    reporters: [
-        'mocha',
-        'saucelabs'
-    ],
-    browserDisconnectTimeout : 10000,
-    browserNoActivityTimeout: 120000,
-    browserDisconnectTolerance : 1,
-...
+n/a
 ```
 
 #### <a name="apidoc.element.numeral.fn.subtract"></a>[function <span class="apidocSignatureSpan">numeral.fn.</span>subtract (value)](#apidoc.element.numeral.fn.subtract)
@@ -1117,22 +952,7 @@ subtract = function (value) {
 ```
 - example usage
 ```shell
-...
-        }
-
-        this._value = _.reduce([this._value, value], cback);
-
-        return this;
-    },
-    difference: function(value) {
-        return Math.abs(numeral(this._value).subtract(value).value());
-    }
-};
-
-/************************************
-    Default Locale && Format
-************************************/
-...
+n/a
 ```
 
 #### <a name="apidoc.element.numeral.fn.value"></a>[function <span class="apidocSignatureSpan">numeral.fn.</span>value ()](#apidoc.element.numeral.fn.value)
@@ -1140,360 +960,6 @@ subtract = function (value) {
 ```javascript
 value = function () {
     return this._value;
-}
-```
-- example usage
-```shell
-...
-    numeral = function(input) {
-var value,
-    kind,
-    unformatFunction,
-    regexp;
-
-if (numeral.isNumeral(input)) {
-    value = input.value();
-} else if (input === 0 || typeof input === 'undefined') {
-    value = 0;
-} else if (input === null || _.isNaN(input)) {
-    value = null;
-} else if (typeof input === 'string') {
-    if (options.zeroFormat && input === options.zeroFormat) {
-        value = 0;
-...
-```
-
-
-
-# <a name="apidoc.module.numeral.numeral"></a>[module numeral.numeral](#apidoc.module.numeral.numeral)
-
-#### <a name="apidoc.element.numeral.numeral.numeral"></a>[function <span class="apidocSignatureSpan">numeral.</span>numeral (input)](#apidoc.element.numeral.numeral.numeral)
-- description and source-code
-```javascript
-numeral = function (input) {
-    var value,
-        kind,
-        unformatFunction,
-        regexp;
-
-    if (numeral.isNumeral(input)) {
-        value = input.value();
-    } else if (input === 0 || typeof input === 'undefined') {
-        value = 0;
-    } else if (input === null || _.isNaN(input)) {
-        value = null;
-    } else if (typeof input === 'string') {
-        if (options.zeroFormat && input === options.zeroFormat) {
-            value = 0;
-        } else if (options.nullFormat && input === options.nullFormat || !input.replace(/[^0-9]+/g, '').length) {
-            value = null;
-        } else {
-            for (kind in formats) {
-                regexp = typeof formats[kind].regexps.unformat === 'function' ? formats[kind].regexps.unformat() : formats[kind].
-regexps.unformat;
-
-                if (regexp && input.match(regexp)) {
-                    unformatFunction = formats[kind].unformat;
-
-                    break;
-                }
-            }
-
-            unformatFunction = unformatFunction || numeral._.stringToNumber;
-
-            value = unformatFunction(input);
-        }
-    } else {
-        value = Number(input)|| null;
-    }
-
-    return new Numeral(input, value);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.numeral.numeral.defaultFormat"></a>[function <span class="apidocSignatureSpan">numeral.numeral.</span>defaultFormat (format)](#apidoc.element.numeral.numeral.defaultFormat)
-- description and source-code
-```javascript
-defaultFormat = function (format) {
-    options.defaultFormat = typeof(format) === 'string' ? format : '0.0';
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.numeral.numeral.isNumeral"></a>[function <span class="apidocSignatureSpan">numeral.numeral.</span>isNumeral (obj)](#apidoc.element.numeral.numeral.isNumeral)
-- description and source-code
-```javascript
-isNumeral = function (obj) {
-    return obj instanceof Numeral;
-}
-```
-- example usage
-```shell
-...
-
-    numeral = function(input) {
-var value,
-    kind,
-    unformatFunction,
-    regexp;
-
-if (numeral.isNumeral(input)) {
-    value = input.value();
-} else if (input === 0 || typeof input === 'undefined') {
-    value = 0;
-} else if (input === null || _.isNaN(input)) {
-    value = null;
-} else if (typeof input === 'string') {
-    if (options.zeroFormat && input === options.zeroFormat) {
-...
-```
-
-#### <a name="apidoc.element.numeral.numeral.locale"></a>[function <span class="apidocSignatureSpan">numeral.numeral.</span>locale (key)](#apidoc.element.numeral.numeral.locale)
-- description and source-code
-```javascript
-locale = function (key) {
-    if (key) {
-        options.currentLocale = key.toLowerCase();
-    }
-
-    return options.currentLocale;
-}
-```
-- example usage
-```shell
-...
-}
-
-//get the decimal and thousands separator from numeral.localeData
-try {
-    //check if the culture is understood by numeral. if not, default it to current locale
-    localeData = numeral.localeData(culture);
-} catch (e) {
-    localeData = numeral.localeData(numeral.locale());
-}
-
-//setup the delimiters and currency symbol based on culture/locale
-_currSymbol = localeData.currency.symbol;
-_abbrObj = localeData.abbreviations;
-_decimalSep = localeData.delimiters.decimal;
-if (localeData.delimiters.thousands === '.') {
-...
-```
-
-#### <a name="apidoc.element.numeral.numeral.localeData"></a>[function <span class="apidocSignatureSpan">numeral.numeral.</span>localeData (key)](#apidoc.element.numeral.numeral.localeData)
-- description and source-code
-```javascript
-localeData = function (key) {
-    if (!key) {
-        return locales[options.currentLocale];
-    }
-
-    key = key.toLowerCase();
-
-    if (!locales[key]) {
-        throw new Error('Unknown locale : ' + key);
-    }
-
-    return locales[key];
-}
-```
-- example usage
-```shell
-...
-if (val === '') {
-    return false;
-}
-
-//get the decimal and thousands separator from numeral.localeData
-try {
-    //check if the culture is understood by numeral. if not, default it to current locale
-    localeData = numeral.localeData(culture);
-} catch (e) {
-    localeData = numeral.localeData(numeral.locale());
-}
-
-//setup the delimiters and currency symbol based on culture/locale
-_currSymbol = localeData.currency.symbol;
-_abbrObj = localeData.abbreviations;
-...
-```
-
-#### <a name="apidoc.element.numeral.numeral.nullFormat"></a>[function <span class="apidocSignatureSpan">numeral.numeral.</span>nullFormat (format)](#apidoc.element.numeral.numeral.nullFormat)
-- description and source-code
-```javascript
-nullFormat = function (format) {
-    options.nullFormat = typeof(format) === 'string' ? format : null;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.numeral.numeral.register"></a>[function <span class="apidocSignatureSpan">numeral.numeral.</span>register (type, name, format)](#apidoc.element.numeral.numeral.register)
-- description and source-code
-```javascript
-register = function (type, name, format) {
-    name = name.toLowerCase();
-
-    if (this[type + 's'][name]) {
-        throw new TypeError(name + ' ' + type + ' already registered.');
-    }
-
-    this[type + 's'][name] = format;
-
-    return format;
-}
-```
-- example usage
-```shell
-...
-
-### 2.0.0
-
-2.0.0 brings a lot of breaking changes and a reorganization of the repo, but also simplifies the api as well as the creating of
-custom formats.
-
-Breaking change / Feature: All formats are now separate files.  This makes it easy to create custom formats, and will also allow
- for custom builds with only certain formats.  (Note: The built numeral.js still contains all formats in the repo).
-
-Breaking change / Feature: All formats and locales are now loaded using 'numeral.register(type, name, {})'
-
-Breaking change: All 'language' now renamed to 'locale' and standardized to all lowercase filenames
-
-Breaking change: The 'locale' function no longer loads locales, it only sets the current locale
-
-Breaking change: The 'unformat' function has been removed 'numeral().unformat(string)' and now happens on numeral init 'numeral(
-string)'
-...
-```
-
-#### <a name="apidoc.element.numeral.numeral.reset"></a>[function <span class="apidocSignatureSpan">numeral.numeral.</span>reset ()](#apidoc.element.numeral.numeral.reset)
-- description and source-code
-```javascript
-reset = function () {
-    for (var property in defaults) {
-        options[property] = defaults[property];
-    }
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.numeral.numeral.validate"></a>[function <span class="apidocSignatureSpan">numeral.numeral.</span>validate (val, culture)](#apidoc.element.numeral.numeral.validate)
-- description and source-code
-```javascript
-validate = function (val, culture) {
-    var _decimalSep,
-        _thousandSep,
-        _currSymbol,
-        _valArray,
-        _abbrObj,
-        _thousandRegEx,
-        localeData,
-        temp;
-
-    //coerce val to string
-    if (typeof val !== 'string') {
-        val += '';
-
-        if (console.warn) {
-            console.warn('Numeral.js: Value is not string. It has been co-erced to: ', val);
-        }
-    }
-
-    //trim whitespaces from either sides
-    val = val.trim();
-
-    //if val is just digits return true
-    if (!!val.match(/^\d+$/)) {
-        return true;
-    }
-
-    //if val is empty return false
-    if (val === '') {
-        return false;
-    }
-
-    //get the decimal and thousands separator from numeral.localeData
-    try {
-        //check if the culture is understood by numeral. if not, default it to current locale
-        localeData = numeral.localeData(culture);
-    } catch (e) {
-        localeData = numeral.localeData(numeral.locale());
-    }
-
-    //setup the delimiters and currency symbol based on culture/locale
-    _currSymbol = localeData.currency.symbol;
-    _abbrObj = localeData.abbreviations;
-    _decimalSep = localeData.delimiters.decimal;
-    if (localeData.delimiters.thousands === '.') {
-        _thousandSep = '\\.';
-    } else {
-        _thousandSep = localeData.delimiters.thousands;
-    }
-
-    // validating currency symbol
-    temp = val.match(/^[^\d]+/);
-    if (temp !== null) {
-        val = val.substr(1);
-        if (temp[0] !== _currSymbol) {
-            return false;
-        }
-    }
-
-    //validating abbreviation symbol
-    temp = val.match(/[^\d]+$/);
-    if (temp !== null) {
-        val = val.slice(0, -1);
-        if (temp[0] !== _abbrObj.thousand && temp[0] !== _abbrObj.million && temp[0] !== _abbrObj.billion && temp[0] !== _abbrObj
-.trillion) {
-            return false;
-        }
-    }
-
-    _thousandRegEx = new RegExp(_thousandSep + '{2}');
-
-    if (!val.match(/[^\d.,]/g)) {
-        _valArray = val.split(_decimalSep);
-        if (_valArray.length > 2) {
-            return false;
-        } else {
-            if (_valArray.length < 2) {
-                return ( !! _valArray[0].match(/^\d+.*\d$/) && !_valArray[0].match(_thousandRegEx));
-            } else {
-                if (_valArray[0].length === 1) {
-                    return ( !! _valArray[0].match(/^\d+$/) && !_valArray[0].match(_thousandRegEx) && !! _valArray[1].match(/^\d
-+$/));
-                } else {
-                    return ( !! _valArray[0].match(/^\d+.*\d$/) && !_valArray[0].match(_thousandRegEx) && !! _valArray[1].match(/^\d+$/));
-                }
-            }
-        }
-    }
-
-    return false;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.numeral.numeral.zeroFormat"></a>[function <span class="apidocSignatureSpan">numeral.numeral.</span>zeroFormat (format)](#apidoc.element.numeral.numeral.zeroFormat)
-- description and source-code
-```javascript
-zeroFormat = function (format) {
-    options.zeroFormat = typeof(format) === 'string' ? format : null;
 }
 ```
 - example usage
