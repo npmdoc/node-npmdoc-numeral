@@ -1,172 +1,172 @@
 <svg height="2702" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="2702" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-15 21:46:02 +0000   336902 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-15 21:46:02 +0000     7050 bytes  Gruntfile.js</tspan>
-<tspan x="10" y="58">  2.  2017-04-15 21:46:02 +0000     1055 bytes  LICENSE</tspan>
-<tspan x="10" y="74">  3.  2017-04-15 21:46:02 +0000     8412 bytes  README.md</tspan>
-<tspan x="10" y="90">  4.  2017-04-15 21:46:02 +0000      294 bytes  bower.json</tspan>
-<tspan x="10" y="106">  5.  2017-04-15 21:46:02 +0000      294 bytes  component.json</tspan>
-<tspan x="10" y="122">  6.  2017-04-15 21:46:02 +0000     1104 bytes  karma-ci.conf.js</tspan>
-<tspan x="10" y="138">  7.  2017-04-15 21:46:02 +0000    18439 bytes  locales.js</tspan>
-<tspan x="10" y="154">  8.  2017-04-15 21:46:02 +0000     1359 bytes  locales/bg.js</tspan>
-<tspan x="10" y="170">  9.  2017-04-15 21:46:02 +0000      883 bytes  locales/chs.js</tspan>
-<tspan x="10" y="186"> 10.  2017-04-15 21:46:02 +0000      839 bytes  locales/cs.js</tspan>
-<tspan x="10" y="202"> 11.  2017-04-15 21:46:02 +0000      853 bytes  locales/da-dk.js</tspan>
-<tspan x="10" y="218"> 12.  2017-04-15 21:46:02 +0000      912 bytes  locales/de-ch.js</tspan>
-<tspan x="10" y="234"> 13.  2017-04-15 21:46:02 +0000      889 bytes  locales/de.js</tspan>
-<tspan x="10" y="250"> 14.  2017-04-15 21:46:02 +0000     1015 bytes  locales/en-au.js</tspan>
-<tspan x="10" y="266"> 15.  2017-04-15 21:46:02 +0000     1025 bytes  locales/en-gb.js</tspan>
-<tspan x="10" y="282"> 16.  2017-04-15 21:46:02 +0000     1031 bytes  locales/en-za.js</tspan>
-<tspan x="10" y="298"> 17.  2017-04-15 21:46:02 +0000     1076 bytes  locales/es-es.js</tspan>
-<tspan x="10" y="314"> 18.  2017-04-15 21:46:02 +0000     1013 bytes  locales/es.js</tspan>
-<tspan x="10" y="330"> 19.  2017-04-15 21:46:02 +0000      924 bytes  locales/et.js</tspan>
-<tspan x="10" y="346"> 20.  2017-04-15 21:46:02 +0000      830 bytes  locales/fi.js</tspan>
-<tspan x="10" y="362"> 21.  2017-04-15 21:46:02 +0000      875 bytes  locales/fr-ca.js</tspan>
-<tspan x="10" y="378"> 22.  2017-04-15 21:46:02 +0000      863 bytes  locales/fr-ch.js</tspan>
-<tspan x="10" y="394"> 23.  2017-04-15 21:46:02 +0000      856 bytes  locales/fr.js</tspan>
-<tspan x="10" y="410"> 24.  2017-04-15 21:46:02 +0000      886 bytes  locales/hu.js</tspan>
-<tspan x="10" y="426"> 25.  2017-04-15 21:46:02 +0000      840 bytes  locales/it.js</tspan>
-<tspan x="10" y="442"> 26.  2017-04-15 21:46:02 +0000      835 bytes  locales/ja.js</tspan>
-<tspan x="10" y="458"> 27.  2017-04-15 21:46:02 +0000      868 bytes  locales/lv.js</tspan>
-<tspan x="10" y="474"> 28.  2017-04-15 21:46:02 +0000     1053 bytes  locales/nl-be.js</tspan>
-<tspan x="10" y="490"> 29.  2017-04-15 21:46:02 +0000      986 bytes  locales/nl-nl.js</tspan>
-<tspan x="10" y="506"> 30.  2017-04-15 21:46:02 +0000      837 bytes  locales/no.js</tspan>
-<tspan x="10" y="522"> 31.  2017-04-15 21:46:02 +0000      845 bytes  locales/pl.js</tspan>
-<tspan x="10" y="538"> 32.  2017-04-15 21:46:02 +0000      864 bytes  locales/pt-br.js</tspan>
-<tspan x="10" y="554"> 33.  2017-04-15 21:46:02 +0000      844 bytes  locales/pt-pt.js</tspan>
-<tspan x="10" y="570"> 34.  2017-04-15 21:46:02 +0000     1032 bytes  locales/ru-ua.js</tspan>
-<tspan x="10" y="586"> 35.  2017-04-15 21:46:02 +0000     1028 bytes  locales/ru.js</tspan>
-<tspan x="10" y="602"> 36.  2017-04-15 21:46:02 +0000      832 bytes  locales/sk.js</tspan>
-<tspan x="10" y="618"> 37.  2017-04-15 21:46:02 +0000      848 bytes  locales/sl.js</tspan>
-<tspan x="10" y="634"> 38.  2017-04-15 21:46:02 +0000      898 bytes  locales/th.js</tspan>
-<tspan x="10" y="650"> 39.  2017-04-15 21:46:02 +0000     1710 bytes  locales/tr.js</tspan>
-<tspan x="10" y="666"> 40.  2017-04-15 21:46:02 +0000     1072 bytes  locales/uk-ua.js</tspan>
-<tspan x="10" y="682"> 41.  2017-04-15 21:46:02 +0000      857 bytes  locales/vi.js</tspan>
-<tspan x="10" y="698"> 42.  2017-04-15 21:46:02 +0000     8287 bytes  min/locales.min.js</tspan>
-<tspan x="10" y="714"> 43.  2017-04-15 21:46:02 +0000      420 bytes  min/locales/be-nl.min.js</tspan>
-<tspan x="10" y="730"> 44.  2017-04-15 21:46:02 +0000      385 bytes  min/locales/bg.min.js</tspan>
-<tspan x="10" y="746"> 45.  2017-04-15 21:46:02 +0000      375 bytes  min/locales/chs.min.js</tspan>
-<tspan x="10" y="762"> 46.  2017-04-15 21:46:02 +0000      366 bytes  min/locales/cs.min.js</tspan>
-<tspan x="10" y="778"> 47.  2017-04-15 21:46:02 +0000      368 bytes  min/locales/da-dk.min.js</tspan>
-<tspan x="10" y="794"> 48.  2017-04-15 21:46:02 +0000      364 bytes  min/locales/de-ch.min.js</tspan>
-<tspan x="10" y="810"> 49.  2017-04-15 21:46:02 +0000      361 bytes  min/locales/de.min.js</tspan>
-<tspan x="10" y="826"> 50.  2017-04-15 21:46:02 +0000      430 bytes  min/locales/en-au.min.js</tspan>
-<tspan x="10" y="842"> 51.  2017-04-15 21:46:02 +0000      431 bytes  min/locales/en-gb.min.js</tspan>
-<tspan x="10" y="858"> 52.  2017-04-15 21:46:02 +0000      430 bytes  min/locales/en-za.min.js</tspan>
-<tspan x="10" y="874"> 53.  2017-04-15 21:46:02 +0000      447 bytes  min/locales/es-es.min.js</tspan>
-<tspan x="10" y="890"> 54.  2017-04-15 21:46:02 +0000      442 bytes  min/locales/es.min.js</tspan>
-<tspan x="10" y="906"> 55.  2017-04-15 21:46:02 +0000      373 bytes  min/locales/et.min.js</tspan>
-<tspan x="10" y="922"> 56.  2017-04-15 21:46:02 +0000      361 bytes  min/locales/fi.min.js</tspan>
-<tspan x="10" y="938"> 57.  2017-04-15 21:46:02 +0000      374 bytes  min/locales/fr-ca.min.js</tspan>
-<tspan x="10" y="954"> 58.  2017-04-15 21:46:02 +0000      376 bytes  min/locales/fr-ch.min.js</tspan>
-<tspan x="10" y="970"> 59.  2017-04-15 21:46:02 +0000      373 bytes  min/locales/fr.min.js</tspan>
-<tspan x="10" y="986"> 60.  2017-04-15 21:46:02 +0000      363 bytes  min/locales/hu.min.js</tspan>
-<tspan x="10" y="1002"> 61.  2017-04-15 21:46:02 +0000      367 bytes  min/locales/it.min.js</tspan>
-<tspan x="10" y="1018"> 62.  2017-04-15 21:46:02 +0000      374 bytes  min/locales/ja.min.js</tspan>
-<tspan x="10" y="1034"> 63.  2017-04-15 21:46:02 +0000      385 bytes  min/locales/lv.min.js</tspan>
-<tspan x="10" y="1050"> 64.  2017-04-15 21:46:02 +0000      420 bytes  min/locales/nl-be.min.js</tspan>
-<tspan x="10" y="1066"> 65.  2017-04-15 21:46:02 +0000      417 bytes  min/locales/nl-nl.min.js</tspan>
-<tspan x="10" y="1082"> 66.  2017-04-15 21:46:02 +0000      360 bytes  min/locales/no.min.js</tspan>
-<tspan x="10" y="1098"> 67.  2017-04-15 21:46:02 +0000      370 bytes  min/locales/pl.min.js</tspan>
-<tspan x="10" y="1114"> 68.  2017-04-15 21:46:02 +0000      373 bytes  min/locales/pt-br.min.js</tspan>
-<tspan x="10" y="1130"> 69.  2017-04-15 21:46:02 +0000      365 bytes  min/locales/pt-pt.min.js</tspan>
-<tspan x="10" y="1146"> 70.  2017-04-15 21:46:02 +0000      374 bytes  min/locales/ru-ua.min.js</tspan>
-<tspan x="10" y="1162"> 71.  2017-04-15 21:46:02 +0000      392 bytes  min/locales/ru.min.js</tspan>
-<tspan x="10" y="1178"> 72.  2017-04-15 21:46:02 +0000      366 bytes  min/locales/sk.min.js</tspan>
-<tspan x="10" y="1194"> 73.  2017-04-15 21:46:02 +0000      371 bytes  min/locales/sl.min.js</tspan>
-<tspan x="10" y="1210"> 74.  2017-04-15 21:46:02 +0000      423 bytes  min/locales/th.min.js</tspan>
-<tspan x="10" y="1226"> 75.  2017-04-15 21:46:02 +0000      661 bytes  min/locales/tr.min.js</tspan>
-<tspan x="10" y="1242"> 76.  2017-04-15 21:46:02 +0000      385 bytes  min/locales/uk-ua.min.js</tspan>
-<tspan x="10" y="1258"> 77.  2017-04-15 21:46:02 +0000      388 bytes  min/locales/vi.min.js</tspan>
-<tspan x="10" y="1274"> 78.  2017-04-15 21:46:02 +0000    11444 bytes  min/numeral.min.js</tspan>
-<tspan x="10" y="1290"> 79.  2017-04-15 21:46:02 +0000    33602 bytes  numeral.js</tspan>
-<tspan x="10" y="1306"> 80.  2017-04-15 21:46:02 +0000     2959 bytes  package.json</tspan>
-<tspan x="10" y="1322"> 81.  2017-04-15 21:46:02 +0000     1526 bytes  src/formats/bps.js</tspan>
-<tspan x="10" y="1338"> 82.  2017-04-15 21:46:02 +0000     3045 bytes  src/formats/bytes.js</tspan>
-<tspan x="10" y="1354"> 83.  2017-04-15 21:46:02 +0000     2833 bytes  src/formats/currency.js</tspan>
-<tspan x="10" y="1370"> 84.  2017-04-15 21:46:02 +0000     1690 bytes  src/formats/exponential.js</tspan>
-<tspan x="10" y="1386"> 85.  2017-04-15 21:46:02 +0000     1027 bytes  src/formats/ordinal.js</tspan>
-<tspan x="10" y="1402"> 86.  2017-04-15 21:46:02 +0000     1549 bytes  src/formats/percentage.js</tspan>
-<tspan x="10" y="1418"> 87.  2017-04-15 21:46:02 +0000     1746 bytes  src/formats/time.js</tspan>
-<tspan x="10" y="1434"> 88.  2017-04-15 21:46:02 +0000     1359 bytes  src/locales/bg.js</tspan>
-<tspan x="10" y="1450"> 89.  2017-04-15 21:46:02 +0000      883 bytes  src/locales/chs.js</tspan>
-<tspan x="10" y="1466"> 90.  2017-04-15 21:46:02 +0000      839 bytes  src/locales/cs.js</tspan>
-<tspan x="10" y="1482"> 91.  2017-04-15 21:46:02 +0000      853 bytes  src/locales/da-dk.js</tspan>
-<tspan x="10" y="1498"> 92.  2017-04-15 21:46:02 +0000      912 bytes  src/locales/de-ch.js</tspan>
-<tspan x="10" y="1514"> 93.  2017-04-15 21:46:02 +0000      889 bytes  src/locales/de.js</tspan>
-<tspan x="10" y="1530"> 94.  2017-04-15 21:46:02 +0000     1015 bytes  src/locales/en-au.js</tspan>
-<tspan x="10" y="1546"> 95.  2017-04-15 21:46:02 +0000     1025 bytes  src/locales/en-gb.js</tspan>
-<tspan x="10" y="1562"> 96.  2017-04-15 21:46:02 +0000     1031 bytes  src/locales/en-za.js</tspan>
-<tspan x="10" y="1578"> 97.  2017-04-15 21:46:02 +0000     1076 bytes  src/locales/es-es.js</tspan>
-<tspan x="10" y="1594"> 98.  2017-04-15 21:46:02 +0000     1013 bytes  src/locales/es.js</tspan>
-<tspan x="10" y="1610"> 99.  2017-04-15 21:46:02 +0000      924 bytes  src/locales/et.js</tspan>
-<tspan x="10" y="1626">100.  2017-04-15 21:46:02 +0000      830 bytes  src/locales/fi.js</tspan>
-<tspan x="10" y="1642">101.  2017-04-15 21:46:02 +0000      875 bytes  src/locales/fr-ca.js</tspan>
-<tspan x="10" y="1658">102.  2017-04-15 21:46:02 +0000      863 bytes  src/locales/fr-ch.js</tspan>
-<tspan x="10" y="1674">103.  2017-04-15 21:46:02 +0000      856 bytes  src/locales/fr.js</tspan>
-<tspan x="10" y="1690">104.  2017-04-15 21:46:02 +0000      886 bytes  src/locales/hu.js</tspan>
-<tspan x="10" y="1706">105.  2017-04-15 21:46:02 +0000      840 bytes  src/locales/it.js</tspan>
-<tspan x="10" y="1722">106.  2017-04-15 21:46:02 +0000      835 bytes  src/locales/ja.js</tspan>
-<tspan x="10" y="1738">107.  2017-04-15 21:46:02 +0000      868 bytes  src/locales/lv.js</tspan>
-<tspan x="10" y="1754">108.  2017-04-15 21:46:02 +0000     1053 bytes  src/locales/nl-be.js</tspan>
-<tspan x="10" y="1770">109.  2017-04-15 21:46:02 +0000      986 bytes  src/locales/nl-nl.js</tspan>
-<tspan x="10" y="1786">110.  2017-04-15 21:46:02 +0000      837 bytes  src/locales/no.js</tspan>
-<tspan x="10" y="1802">111.  2017-04-15 21:46:02 +0000      845 bytes  src/locales/pl.js</tspan>
-<tspan x="10" y="1818">112.  2017-04-15 21:46:02 +0000      864 bytes  src/locales/pt-br.js</tspan>
-<tspan x="10" y="1834">113.  2017-04-15 21:46:02 +0000      844 bytes  src/locales/pt-pt.js</tspan>
-<tspan x="10" y="1850">114.  2017-04-15 21:46:02 +0000     1032 bytes  src/locales/ru-ua.js</tspan>
-<tspan x="10" y="1866">115.  2017-04-15 21:46:02 +0000     1028 bytes  src/locales/ru.js</tspan>
-<tspan x="10" y="1882">116.  2017-04-15 21:46:02 +0000      832 bytes  src/locales/sk.js</tspan>
-<tspan x="10" y="1898">117.  2017-04-15 21:46:02 +0000      848 bytes  src/locales/sl.js</tspan>
-<tspan x="10" y="1914">118.  2017-04-15 21:46:02 +0000      898 bytes  src/locales/th.js</tspan>
-<tspan x="10" y="1930">119.  2017-04-15 21:46:02 +0000     1710 bytes  src/locales/tr.js</tspan>
-<tspan x="10" y="1946">120.  2017-04-15 21:46:02 +0000     1072 bytes  src/locales/uk-ua.js</tspan>
-<tspan x="10" y="1962">121.  2017-04-15 21:46:02 +0000      857 bytes  src/locales/vi.js</tspan>
-<tspan x="10" y="1978">122.  2017-04-15 21:46:02 +0000    23056 bytes  src/numeral.js</tspan>
-<tspan x="10" y="1994">123.  2017-04-15 21:46:02 +0000       39 bytes  templates/anon.js</tspan>
-<tspan x="10" y="2010">124.  2017-04-15 21:46:02 +0000      447 bytes  templates/types.js</tspan>
-<tspan x="10" y="2026">125.  2017-04-15 21:46:02 +0000     1113 bytes  tests/formats/bps.js</tspan>
-<tspan x="10" y="2042">126.  2017-04-15 21:46:02 +0000     2151 bytes  tests/formats/bytes.js</tspan>
-<tspan x="10" y="2058">127.  2017-04-15 21:46:02 +0000     2317 bytes  tests/formats/currency.js</tspan>
-<tspan x="10" y="2074">128.  2017-04-15 21:46:02 +0000     1352 bytes  tests/formats/exponential.js</tspan>
-<tspan x="10" y="2090">129.  2017-04-15 21:46:02 +0000     1211 bytes  tests/formats/ordinal.js</tspan>
-<tspan x="10" y="2106">130.  2017-04-15 21:46:02 +0000     3287 bytes  tests/formats/percentage.js</tspan>
-<tspan x="10" y="2122">131.  2017-04-15 21:46:02 +0000     1079 bytes  tests/formats/time.js</tspan>
-<tspan x="10" y="2138">132.  2017-04-15 21:46:02 +0000     2936 bytes  tests/locales/bg.js</tspan>
-<tspan x="10" y="2154">133.  2017-04-15 21:46:02 +0000     2917 bytes  tests/locales/chs.js</tspan>
-<tspan x="10" y="2170">134.  2017-04-15 21:46:02 +0000     2962 bytes  tests/locales/cs.js</tspan>
-<tspan x="10" y="2186">135.  2017-04-15 21:46:02 +0000     2911 bytes  tests/locales/da-dk.js</tspan>
-<tspan x="10" y="2202">136.  2017-04-15 21:46:02 +0000     2906 bytes  tests/locales/de-ch.js</tspan>
-<tspan x="10" y="2218">137.  2017-04-15 21:46:02 +0000     2900 bytes  tests/locales/de.js</tspan>
-<tspan x="10" y="2234">138.  2017-04-15 21:46:02 +0000     2899 bytes  tests/locales/en-au.js</tspan>
-<tspan x="10" y="2250">139.  2017-04-15 21:46:02 +0000     2905 bytes  tests/locales/en-gb.js</tspan>
-<tspan x="10" y="2266">140.  2017-04-15 21:46:02 +0000     2899 bytes  tests/locales/en-za.js</tspan>
-<tspan x="10" y="2282">141.  2017-04-15 21:46:02 +0000     2910 bytes  tests/locales/es-es.js</tspan>
-<tspan x="10" y="2298">142.  2017-04-15 21:46:02 +0000     2896 bytes  tests/locales/es.js</tspan>
-<tspan x="10" y="2314">143.  2017-04-15 21:46:02 +0000     2921 bytes  tests/locales/et.js</tspan>
-<tspan x="10" y="2330">144.  2017-04-15 21:46:02 +0000     2900 bytes  tests/locales/fi.js</tspan>
-<tspan x="10" y="2346">145.  2017-04-15 21:46:02 +0000     2922 bytes  tests/locales/fr-ca.js</tspan>
-<tspan x="10" y="2362">146.  2017-04-15 21:46:02 +0000     2915 bytes  tests/locales/fr-ch.js</tspan>
-<tspan x="10" y="2378">147.  2017-04-15 21:46:02 +0000     2901 bytes  tests/locales/fr.js</tspan>
-<tspan x="10" y="2394">148.  2017-04-15 21:46:02 +0000     2900 bytes  tests/locales/hu.js</tspan>
-<tspan x="10" y="2410">149.  2017-04-15 21:46:02 +0000     2923 bytes  tests/locales/it.js</tspan>
-<tspan x="10" y="2426">150.  2017-04-15 21:46:02 +0000     2917 bytes  tests/locales/ja.js</tspan>
-<tspan x="10" y="2442">151.  2017-04-15 21:46:02 +0000     2943 bytes  tests/locales/lv.js</tspan>
-<tspan x="10" y="2458">152.  2017-04-15 21:46:02 +0000     3134 bytes  tests/locales/nl-be.js</tspan>
-<tspan x="10" y="2474">153.  2017-04-15 21:46:02 +0000     3227 bytes  tests/locales/nl-nl.js</tspan>
-<tspan x="10" y="2490">154.  2017-04-15 21:46:02 +0000     2945 bytes  tests/locales/no.js</tspan>
-<tspan x="10" y="2506">155.  2017-04-15 21:46:02 +0000     2958 bytes  tests/locales/pl.js</tspan>
-<tspan x="10" y="2522">156.  2017-04-15 21:46:02 +0000     2934 bytes  tests/locales/pt-br.js</tspan>
-<tspan x="10" y="2538">157.  2017-04-15 21:46:02 +0000     2911 bytes  tests/locales/pt-pt.js</tspan>
-<tspan x="10" y="2554">158.  2017-04-15 21:46:02 +0000     2988 bytes  tests/locales/ru-ua.js</tspan>
-<tspan x="10" y="2570">159.  2017-04-15 21:46:02 +0000     3014 bytes  tests/locales/ru.js</tspan>
-<tspan x="10" y="2586">160.  2017-04-15 21:46:02 +0000     2921 bytes  tests/locales/sk.js</tspan>
-<tspan x="10" y="2602">161.  2017-04-15 21:46:02 +0000     2906 bytes  tests/locales/sl.js</tspan>
-<tspan x="10" y="2618">162.  2017-04-15 21:46:02 +0000     2965 bytes  tests/locales/th.js</tspan>
-<tspan x="10" y="2634">163.  2017-04-15 21:46:02 +0000     2969 bytes  tests/locales/tr.js</tspan>
-<tspan x="10" y="2650">164.  2017-04-15 21:46:02 +0000     2984 bytes  tests/locales/uk-ua.js</tspan>
-<tspan x="10" y="2666">165.  2017-04-15 21:46:02 +0000     3132 bytes  tests/locales/vi.js</tspan>
-<tspan x="10" y="2682">166.  2017-04-15 21:46:02 +0000    15637 bytes  tests/numeral.js</tspan>
+<tspan x="10" y="26">  0.  2017-04-15 21:47:16 +0000   336902 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-15 21:47:16 +0000     7050 bytes  Gruntfile.js</tspan>
+<tspan x="10" y="58">  2.  2017-04-15 21:47:16 +0000     1055 bytes  LICENSE</tspan>
+<tspan x="10" y="74">  3.  2017-04-15 21:47:16 +0000     8412 bytes  README.md</tspan>
+<tspan x="10" y="90">  4.  2017-04-15 21:47:16 +0000      294 bytes  bower.json</tspan>
+<tspan x="10" y="106">  5.  2017-04-15 21:47:16 +0000      294 bytes  component.json</tspan>
+<tspan x="10" y="122">  6.  2017-04-15 21:47:16 +0000     1104 bytes  karma-ci.conf.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-15 21:47:16 +0000    18439 bytes  locales.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-15 21:47:16 +0000     1359 bytes  locales/bg.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-15 21:47:16 +0000      883 bytes  locales/chs.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-15 21:47:16 +0000      839 bytes  locales/cs.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-15 21:47:16 +0000      853 bytes  locales/da-dk.js</tspan>
+<tspan x="10" y="218"> 12.  2017-04-15 21:47:16 +0000      912 bytes  locales/de-ch.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-15 21:47:16 +0000      889 bytes  locales/de.js</tspan>
+<tspan x="10" y="250"> 14.  2017-04-15 21:47:16 +0000     1015 bytes  locales/en-au.js</tspan>
+<tspan x="10" y="266"> 15.  2017-04-15 21:47:16 +0000     1025 bytes  locales/en-gb.js</tspan>
+<tspan x="10" y="282"> 16.  2017-04-15 21:47:16 +0000     1031 bytes  locales/en-za.js</tspan>
+<tspan x="10" y="298"> 17.  2017-04-15 21:47:16 +0000     1076 bytes  locales/es-es.js</tspan>
+<tspan x="10" y="314"> 18.  2017-04-15 21:47:16 +0000     1013 bytes  locales/es.js</tspan>
+<tspan x="10" y="330"> 19.  2017-04-15 21:47:16 +0000      924 bytes  locales/et.js</tspan>
+<tspan x="10" y="346"> 20.  2017-04-15 21:47:16 +0000      830 bytes  locales/fi.js</tspan>
+<tspan x="10" y="362"> 21.  2017-04-15 21:47:16 +0000      875 bytes  locales/fr-ca.js</tspan>
+<tspan x="10" y="378"> 22.  2017-04-15 21:47:16 +0000      863 bytes  locales/fr-ch.js</tspan>
+<tspan x="10" y="394"> 23.  2017-04-15 21:47:16 +0000      856 bytes  locales/fr.js</tspan>
+<tspan x="10" y="410"> 24.  2017-04-15 21:47:16 +0000      886 bytes  locales/hu.js</tspan>
+<tspan x="10" y="426"> 25.  2017-04-15 21:47:16 +0000      840 bytes  locales/it.js</tspan>
+<tspan x="10" y="442"> 26.  2017-04-15 21:47:16 +0000      835 bytes  locales/ja.js</tspan>
+<tspan x="10" y="458"> 27.  2017-04-15 21:47:16 +0000      868 bytes  locales/lv.js</tspan>
+<tspan x="10" y="474"> 28.  2017-04-15 21:47:16 +0000     1053 bytes  locales/nl-be.js</tspan>
+<tspan x="10" y="490"> 29.  2017-04-15 21:47:16 +0000      986 bytes  locales/nl-nl.js</tspan>
+<tspan x="10" y="506"> 30.  2017-04-15 21:47:16 +0000      837 bytes  locales/no.js</tspan>
+<tspan x="10" y="522"> 31.  2017-04-15 21:47:16 +0000      845 bytes  locales/pl.js</tspan>
+<tspan x="10" y="538"> 32.  2017-04-15 21:47:16 +0000      864 bytes  locales/pt-br.js</tspan>
+<tspan x="10" y="554"> 33.  2017-04-15 21:47:16 +0000      844 bytes  locales/pt-pt.js</tspan>
+<tspan x="10" y="570"> 34.  2017-04-15 21:47:16 +0000     1032 bytes  locales/ru-ua.js</tspan>
+<tspan x="10" y="586"> 35.  2017-04-15 21:47:16 +0000     1028 bytes  locales/ru.js</tspan>
+<tspan x="10" y="602"> 36.  2017-04-15 21:47:16 +0000      832 bytes  locales/sk.js</tspan>
+<tspan x="10" y="618"> 37.  2017-04-15 21:47:16 +0000      848 bytes  locales/sl.js</tspan>
+<tspan x="10" y="634"> 38.  2017-04-15 21:47:16 +0000      898 bytes  locales/th.js</tspan>
+<tspan x="10" y="650"> 39.  2017-04-15 21:47:16 +0000     1710 bytes  locales/tr.js</tspan>
+<tspan x="10" y="666"> 40.  2017-04-15 21:47:16 +0000     1072 bytes  locales/uk-ua.js</tspan>
+<tspan x="10" y="682"> 41.  2017-04-15 21:47:16 +0000      857 bytes  locales/vi.js</tspan>
+<tspan x="10" y="698"> 42.  2017-04-15 21:47:16 +0000     8287 bytes  min/locales.min.js</tspan>
+<tspan x="10" y="714"> 43.  2017-04-15 21:47:16 +0000      420 bytes  min/locales/be-nl.min.js</tspan>
+<tspan x="10" y="730"> 44.  2017-04-15 21:47:16 +0000      385 bytes  min/locales/bg.min.js</tspan>
+<tspan x="10" y="746"> 45.  2017-04-15 21:47:16 +0000      375 bytes  min/locales/chs.min.js</tspan>
+<tspan x="10" y="762"> 46.  2017-04-15 21:47:16 +0000      366 bytes  min/locales/cs.min.js</tspan>
+<tspan x="10" y="778"> 47.  2017-04-15 21:47:16 +0000      368 bytes  min/locales/da-dk.min.js</tspan>
+<tspan x="10" y="794"> 48.  2017-04-15 21:47:16 +0000      364 bytes  min/locales/de-ch.min.js</tspan>
+<tspan x="10" y="810"> 49.  2017-04-15 21:47:16 +0000      361 bytes  min/locales/de.min.js</tspan>
+<tspan x="10" y="826"> 50.  2017-04-15 21:47:16 +0000      430 bytes  min/locales/en-au.min.js</tspan>
+<tspan x="10" y="842"> 51.  2017-04-15 21:47:16 +0000      431 bytes  min/locales/en-gb.min.js</tspan>
+<tspan x="10" y="858"> 52.  2017-04-15 21:47:16 +0000      430 bytes  min/locales/en-za.min.js</tspan>
+<tspan x="10" y="874"> 53.  2017-04-15 21:47:16 +0000      447 bytes  min/locales/es-es.min.js</tspan>
+<tspan x="10" y="890"> 54.  2017-04-15 21:47:16 +0000      442 bytes  min/locales/es.min.js</tspan>
+<tspan x="10" y="906"> 55.  2017-04-15 21:47:16 +0000      373 bytes  min/locales/et.min.js</tspan>
+<tspan x="10" y="922"> 56.  2017-04-15 21:47:16 +0000      361 bytes  min/locales/fi.min.js</tspan>
+<tspan x="10" y="938"> 57.  2017-04-15 21:47:16 +0000      374 bytes  min/locales/fr-ca.min.js</tspan>
+<tspan x="10" y="954"> 58.  2017-04-15 21:47:16 +0000      376 bytes  min/locales/fr-ch.min.js</tspan>
+<tspan x="10" y="970"> 59.  2017-04-15 21:47:16 +0000      373 bytes  min/locales/fr.min.js</tspan>
+<tspan x="10" y="986"> 60.  2017-04-15 21:47:16 +0000      363 bytes  min/locales/hu.min.js</tspan>
+<tspan x="10" y="1002"> 61.  2017-04-15 21:47:16 +0000      367 bytes  min/locales/it.min.js</tspan>
+<tspan x="10" y="1018"> 62.  2017-04-15 21:47:16 +0000      374 bytes  min/locales/ja.min.js</tspan>
+<tspan x="10" y="1034"> 63.  2017-04-15 21:47:16 +0000      385 bytes  min/locales/lv.min.js</tspan>
+<tspan x="10" y="1050"> 64.  2017-04-15 21:47:16 +0000      420 bytes  min/locales/nl-be.min.js</tspan>
+<tspan x="10" y="1066"> 65.  2017-04-15 21:47:16 +0000      417 bytes  min/locales/nl-nl.min.js</tspan>
+<tspan x="10" y="1082"> 66.  2017-04-15 21:47:16 +0000      360 bytes  min/locales/no.min.js</tspan>
+<tspan x="10" y="1098"> 67.  2017-04-15 21:47:16 +0000      370 bytes  min/locales/pl.min.js</tspan>
+<tspan x="10" y="1114"> 68.  2017-04-15 21:47:16 +0000      373 bytes  min/locales/pt-br.min.js</tspan>
+<tspan x="10" y="1130"> 69.  2017-04-15 21:47:16 +0000      365 bytes  min/locales/pt-pt.min.js</tspan>
+<tspan x="10" y="1146"> 70.  2017-04-15 21:47:16 +0000      374 bytes  min/locales/ru-ua.min.js</tspan>
+<tspan x="10" y="1162"> 71.  2017-04-15 21:47:16 +0000      392 bytes  min/locales/ru.min.js</tspan>
+<tspan x="10" y="1178"> 72.  2017-04-15 21:47:16 +0000      366 bytes  min/locales/sk.min.js</tspan>
+<tspan x="10" y="1194"> 73.  2017-04-15 21:47:16 +0000      371 bytes  min/locales/sl.min.js</tspan>
+<tspan x="10" y="1210"> 74.  2017-04-15 21:47:16 +0000      423 bytes  min/locales/th.min.js</tspan>
+<tspan x="10" y="1226"> 75.  2017-04-15 21:47:16 +0000      661 bytes  min/locales/tr.min.js</tspan>
+<tspan x="10" y="1242"> 76.  2017-04-15 21:47:16 +0000      385 bytes  min/locales/uk-ua.min.js</tspan>
+<tspan x="10" y="1258"> 77.  2017-04-15 21:47:16 +0000      388 bytes  min/locales/vi.min.js</tspan>
+<tspan x="10" y="1274"> 78.  2017-04-15 21:47:16 +0000    11444 bytes  min/numeral.min.js</tspan>
+<tspan x="10" y="1290"> 79.  2017-04-15 21:47:16 +0000    33602 bytes  numeral.js</tspan>
+<tspan x="10" y="1306"> 80.  2017-04-15 21:47:16 +0000     2959 bytes  package.json</tspan>
+<tspan x="10" y="1322"> 81.  2017-04-15 21:47:16 +0000     1526 bytes  src/formats/bps.js</tspan>
+<tspan x="10" y="1338"> 82.  2017-04-15 21:47:16 +0000     3045 bytes  src/formats/bytes.js</tspan>
+<tspan x="10" y="1354"> 83.  2017-04-15 21:47:16 +0000     2833 bytes  src/formats/currency.js</tspan>
+<tspan x="10" y="1370"> 84.  2017-04-15 21:47:16 +0000     1690 bytes  src/formats/exponential.js</tspan>
+<tspan x="10" y="1386"> 85.  2017-04-15 21:47:16 +0000     1027 bytes  src/formats/ordinal.js</tspan>
+<tspan x="10" y="1402"> 86.  2017-04-15 21:47:16 +0000     1549 bytes  src/formats/percentage.js</tspan>
+<tspan x="10" y="1418"> 87.  2017-04-15 21:47:16 +0000     1746 bytes  src/formats/time.js</tspan>
+<tspan x="10" y="1434"> 88.  2017-04-15 21:47:16 +0000     1359 bytes  src/locales/bg.js</tspan>
+<tspan x="10" y="1450"> 89.  2017-04-15 21:47:16 +0000      883 bytes  src/locales/chs.js</tspan>
+<tspan x="10" y="1466"> 90.  2017-04-15 21:47:16 +0000      839 bytes  src/locales/cs.js</tspan>
+<tspan x="10" y="1482"> 91.  2017-04-15 21:47:16 +0000      853 bytes  src/locales/da-dk.js</tspan>
+<tspan x="10" y="1498"> 92.  2017-04-15 21:47:16 +0000      912 bytes  src/locales/de-ch.js</tspan>
+<tspan x="10" y="1514"> 93.  2017-04-15 21:47:16 +0000      889 bytes  src/locales/de.js</tspan>
+<tspan x="10" y="1530"> 94.  2017-04-15 21:47:16 +0000     1015 bytes  src/locales/en-au.js</tspan>
+<tspan x="10" y="1546"> 95.  2017-04-15 21:47:16 +0000     1025 bytes  src/locales/en-gb.js</tspan>
+<tspan x="10" y="1562"> 96.  2017-04-15 21:47:16 +0000     1031 bytes  src/locales/en-za.js</tspan>
+<tspan x="10" y="1578"> 97.  2017-04-15 21:47:16 +0000     1076 bytes  src/locales/es-es.js</tspan>
+<tspan x="10" y="1594"> 98.  2017-04-15 21:47:16 +0000     1013 bytes  src/locales/es.js</tspan>
+<tspan x="10" y="1610"> 99.  2017-04-15 21:47:16 +0000      924 bytes  src/locales/et.js</tspan>
+<tspan x="10" y="1626">100.  2017-04-15 21:47:16 +0000      830 bytes  src/locales/fi.js</tspan>
+<tspan x="10" y="1642">101.  2017-04-15 21:47:16 +0000      875 bytes  src/locales/fr-ca.js</tspan>
+<tspan x="10" y="1658">102.  2017-04-15 21:47:16 +0000      863 bytes  src/locales/fr-ch.js</tspan>
+<tspan x="10" y="1674">103.  2017-04-15 21:47:16 +0000      856 bytes  src/locales/fr.js</tspan>
+<tspan x="10" y="1690">104.  2017-04-15 21:47:16 +0000      886 bytes  src/locales/hu.js</tspan>
+<tspan x="10" y="1706">105.  2017-04-15 21:47:16 +0000      840 bytes  src/locales/it.js</tspan>
+<tspan x="10" y="1722">106.  2017-04-15 21:47:16 +0000      835 bytes  src/locales/ja.js</tspan>
+<tspan x="10" y="1738">107.  2017-04-15 21:47:16 +0000      868 bytes  src/locales/lv.js</tspan>
+<tspan x="10" y="1754">108.  2017-04-15 21:47:16 +0000     1053 bytes  src/locales/nl-be.js</tspan>
+<tspan x="10" y="1770">109.  2017-04-15 21:47:16 +0000      986 bytes  src/locales/nl-nl.js</tspan>
+<tspan x="10" y="1786">110.  2017-04-15 21:47:16 +0000      837 bytes  src/locales/no.js</tspan>
+<tspan x="10" y="1802">111.  2017-04-15 21:47:16 +0000      845 bytes  src/locales/pl.js</tspan>
+<tspan x="10" y="1818">112.  2017-04-15 21:47:16 +0000      864 bytes  src/locales/pt-br.js</tspan>
+<tspan x="10" y="1834">113.  2017-04-15 21:47:16 +0000      844 bytes  src/locales/pt-pt.js</tspan>
+<tspan x="10" y="1850">114.  2017-04-15 21:47:16 +0000     1032 bytes  src/locales/ru-ua.js</tspan>
+<tspan x="10" y="1866">115.  2017-04-15 21:47:16 +0000     1028 bytes  src/locales/ru.js</tspan>
+<tspan x="10" y="1882">116.  2017-04-15 21:47:16 +0000      832 bytes  src/locales/sk.js</tspan>
+<tspan x="10" y="1898">117.  2017-04-15 21:47:16 +0000      848 bytes  src/locales/sl.js</tspan>
+<tspan x="10" y="1914">118.  2017-04-15 21:47:16 +0000      898 bytes  src/locales/th.js</tspan>
+<tspan x="10" y="1930">119.  2017-04-15 21:47:16 +0000     1710 bytes  src/locales/tr.js</tspan>
+<tspan x="10" y="1946">120.  2017-04-15 21:47:16 +0000     1072 bytes  src/locales/uk-ua.js</tspan>
+<tspan x="10" y="1962">121.  2017-04-15 21:47:16 +0000      857 bytes  src/locales/vi.js</tspan>
+<tspan x="10" y="1978">122.  2017-04-15 21:47:16 +0000    23056 bytes  src/numeral.js</tspan>
+<tspan x="10" y="1994">123.  2017-04-15 21:47:16 +0000       39 bytes  templates/anon.js</tspan>
+<tspan x="10" y="2010">124.  2017-04-15 21:47:16 +0000      447 bytes  templates/types.js</tspan>
+<tspan x="10" y="2026">125.  2017-04-15 21:47:16 +0000     1113 bytes  tests/formats/bps.js</tspan>
+<tspan x="10" y="2042">126.  2017-04-15 21:47:16 +0000     2151 bytes  tests/formats/bytes.js</tspan>
+<tspan x="10" y="2058">127.  2017-04-15 21:47:16 +0000     2317 bytes  tests/formats/currency.js</tspan>
+<tspan x="10" y="2074">128.  2017-04-15 21:47:16 +0000     1352 bytes  tests/formats/exponential.js</tspan>
+<tspan x="10" y="2090">129.  2017-04-15 21:47:16 +0000     1211 bytes  tests/formats/ordinal.js</tspan>
+<tspan x="10" y="2106">130.  2017-04-15 21:47:16 +0000     3287 bytes  tests/formats/percentage.js</tspan>
+<tspan x="10" y="2122">131.  2017-04-15 21:47:16 +0000     1079 bytes  tests/formats/time.js</tspan>
+<tspan x="10" y="2138">132.  2017-04-15 21:47:16 +0000     2936 bytes  tests/locales/bg.js</tspan>
+<tspan x="10" y="2154">133.  2017-04-15 21:47:16 +0000     2917 bytes  tests/locales/chs.js</tspan>
+<tspan x="10" y="2170">134.  2017-04-15 21:47:16 +0000     2962 bytes  tests/locales/cs.js</tspan>
+<tspan x="10" y="2186">135.  2017-04-15 21:47:16 +0000     2911 bytes  tests/locales/da-dk.js</tspan>
+<tspan x="10" y="2202">136.  2017-04-15 21:47:16 +0000     2906 bytes  tests/locales/de-ch.js</tspan>
+<tspan x="10" y="2218">137.  2017-04-15 21:47:16 +0000     2900 bytes  tests/locales/de.js</tspan>
+<tspan x="10" y="2234">138.  2017-04-15 21:47:16 +0000     2899 bytes  tests/locales/en-au.js</tspan>
+<tspan x="10" y="2250">139.  2017-04-15 21:47:16 +0000     2905 bytes  tests/locales/en-gb.js</tspan>
+<tspan x="10" y="2266">140.  2017-04-15 21:47:16 +0000     2899 bytes  tests/locales/en-za.js</tspan>
+<tspan x="10" y="2282">141.  2017-04-15 21:47:16 +0000     2910 bytes  tests/locales/es-es.js</tspan>
+<tspan x="10" y="2298">142.  2017-04-15 21:47:16 +0000     2896 bytes  tests/locales/es.js</tspan>
+<tspan x="10" y="2314">143.  2017-04-15 21:47:16 +0000     2921 bytes  tests/locales/et.js</tspan>
+<tspan x="10" y="2330">144.  2017-04-15 21:47:16 +0000     2900 bytes  tests/locales/fi.js</tspan>
+<tspan x="10" y="2346">145.  2017-04-15 21:47:16 +0000     2922 bytes  tests/locales/fr-ca.js</tspan>
+<tspan x="10" y="2362">146.  2017-04-15 21:47:16 +0000     2915 bytes  tests/locales/fr-ch.js</tspan>
+<tspan x="10" y="2378">147.  2017-04-15 21:47:16 +0000     2901 bytes  tests/locales/fr.js</tspan>
+<tspan x="10" y="2394">148.  2017-04-15 21:47:16 +0000     2900 bytes  tests/locales/hu.js</tspan>
+<tspan x="10" y="2410">149.  2017-04-15 21:47:16 +0000     2923 bytes  tests/locales/it.js</tspan>
+<tspan x="10" y="2426">150.  2017-04-15 21:47:16 +0000     2917 bytes  tests/locales/ja.js</tspan>
+<tspan x="10" y="2442">151.  2017-04-15 21:47:16 +0000     2943 bytes  tests/locales/lv.js</tspan>
+<tspan x="10" y="2458">152.  2017-04-15 21:47:16 +0000     3134 bytes  tests/locales/nl-be.js</tspan>
+<tspan x="10" y="2474">153.  2017-04-15 21:47:16 +0000     3227 bytes  tests/locales/nl-nl.js</tspan>
+<tspan x="10" y="2490">154.  2017-04-15 21:47:16 +0000     2945 bytes  tests/locales/no.js</tspan>
+<tspan x="10" y="2506">155.  2017-04-15 21:47:16 +0000     2958 bytes  tests/locales/pl.js</tspan>
+<tspan x="10" y="2522">156.  2017-04-15 21:47:16 +0000     2934 bytes  tests/locales/pt-br.js</tspan>
+<tspan x="10" y="2538">157.  2017-04-15 21:47:16 +0000     2911 bytes  tests/locales/pt-pt.js</tspan>
+<tspan x="10" y="2554">158.  2017-04-15 21:47:16 +0000     2988 bytes  tests/locales/ru-ua.js</tspan>
+<tspan x="10" y="2570">159.  2017-04-15 21:47:16 +0000     3014 bytes  tests/locales/ru.js</tspan>
+<tspan x="10" y="2586">160.  2017-04-15 21:47:16 +0000     2921 bytes  tests/locales/sk.js</tspan>
+<tspan x="10" y="2602">161.  2017-04-15 21:47:16 +0000     2906 bytes  tests/locales/sl.js</tspan>
+<tspan x="10" y="2618">162.  2017-04-15 21:47:16 +0000     2965 bytes  tests/locales/th.js</tspan>
+<tspan x="10" y="2634">163.  2017-04-15 21:47:16 +0000     2969 bytes  tests/locales/tr.js</tspan>
+<tspan x="10" y="2650">164.  2017-04-15 21:47:16 +0000     2984 bytes  tests/locales/uk-ua.js</tspan>
+<tspan x="10" y="2666">165.  2017-04-15 21:47:16 +0000     3132 bytes  tests/locales/vi.js</tspan>
+<tspan x="10" y="2682">166.  2017-04-15 21:47:16 +0000    15637 bytes  tests/numeral.js</tspan>
 </text>
 </svg>
