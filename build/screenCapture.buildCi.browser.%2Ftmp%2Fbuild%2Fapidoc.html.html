@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="http://numeraljs.com"
-
-    >numeral (v2.0.6)</a>
+    <a href="http://numeraljs.com">numeral (v2.0.6)</a>
 </h1>
 <h4>Format and manipulate numbers.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.numeral">module numeral</a><ol>
 
@@ -519,21 +512,21 @@
 
     if (numeral.isNumeral(input)) {
         value = input.value();
-    } else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
+    } else if (input === 0 || typeof input === 'undefined') {
         value = 0;
     } else if (input === null || _.isNaN(input)) {
         value = null;
-    } else if (typeof input === &#x27;string&#x27;) {
-        if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
+    } else if (typeof input === 'string') {
+        if (options.zeroFormat &amp;&amp; input === options.zeroFormat) {
             value = 0;
-        } else if (options.nullFormat &#x26;&#x26; input === options.nullFormat || !input.replace(/[^0-9]+/g, &#x27;&#x27;).length) {
+        } else if (options.nullFormat &amp;&amp; input === options.nullFormat || !input.replace(/[^0-9]+/g, '').length) {
             value = null;
         } else {
             for (kind in formats) {
-                regexp = typeof formats[kind].regexps.unformat === &#x27;function&#x27; ? formats[kind].regexps.unformat() : formats[kind].
+                regexp = typeof formats[kind].regexps.unformat === 'function' ? formats[kind].regexps.unformat() : formats[kind].
 regexps.unformat;
 
-                if (regexp &#x26;&#x26; input.match(regexp)) {
+                if (regexp &amp;&amp; input.match(regexp)) {
                     unformatFunction = formats[kind].unformat;
 
                     break;
@@ -563,7 +556,7 @@ regexps.unformat;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">defaultFormat = function (format) {
-    options.defaultFormat = typeof(format) === &#x27;string&#x27; ? format : &#x27;0.0&#x27;;
+    options.defaultFormat = typeof(format) === 'string' ? format : '0.0';
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -590,12 +583,12 @@ var value,
 
 if (numeral.<span class="apidocCodeKeywordSpan">isNumeral</span>(input)) {
     value = input.value();
-} else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
+} else if (input === 0 || typeof input === 'undefined') {
     value = 0;
 } else if (input === null || _.isNaN(input)) {
     value = null;
-} else if (typeof input === &#x27;string&#x27;) {
-    if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
+} else if (typeof input === 'string') {
+    if (options.zeroFormat &amp;&amp; input === options.zeroFormat) {
 ...</pre></li>
     </ul>
 
@@ -630,7 +623,7 @@ try {
 _currSymbol = localeData.currency.symbol;
 _abbrObj = localeData.abbreviations;
 _decimalSep = localeData.delimiters.decimal;
-if (localeData.delimiters.thousands === &#x27;.&#x27;) {
+if (localeData.delimiters.thousands === '.') {
 ...</pre></li>
     </ul>
 
@@ -651,13 +644,13 @@ if (localeData.delimiters.thousands === &#x27;.&#x27;) {
     key = key.toLowerCase();
 
     if (!locales[key]) {
-        throw new Error(&#x27;Unknown locale : &#x27; + key);
+        throw new Error('Unknown locale : ' + key);
     }
 
     return locales[key];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-if (val === &#x27;&#x27;) {
+if (val === '') {
     return false;
 }
 
@@ -685,7 +678,7 @@ _abbrObj = localeData.abbreviations;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">nullFormat = function (format) {
-    options.nullFormat = typeof(format) === &#x27;string&#x27; ? format : null;
+    options.nullFormat = typeof(format) === 'string' ? format : null;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -702,11 +695,11 @@ _abbrObj = localeData.abbreviations;
     <li>description and source-code<pre class="apidocCodePre">register = function (type, name, format) {
     name = name.toLowerCase();
 
-    if (this[type + &#x27;s&#x27;][name]) {
-        throw new TypeError(name + &#x27; &#x27; + type + &#x27; already registered.&#x27;);
+    if (this[type + 's'][name]) {
+        throw new TypeError(name + ' ' + type + ' already registered.');
     }
 
-    this[type + &#x27;s&#x27;][name] = format;
+    this[type + 's'][name] = format;
 
     return format;
 }</pre></li>
@@ -720,8 +713,7 @@ custom formats.
 Breaking change / Feature: All formats are now separate files.  This makes it easy to create custom formats, and will also allow
  for custom builds with only certain formats.  (Note: The built numeral.js still contains all formats in the repo).
 
-Breaking change / Feature: All formats and locales are now loaded using `numeral.<span class="apidocCodeKeywordSpan">register</span
->(type, name, {})`
+Breaking change / Feature: All formats and locales are now loaded using `numeral.<span class="apidocCodeKeywordSpan">register</span>(type, name, {})`
 
 Breaking change: All `language` now renamed to `locale` and standardized to all lowercase filenames
 
@@ -769,11 +761,11 @@ string)`
         temp;
 
     //coerce val to string
-    if (typeof val !== &#x27;string&#x27;) {
-        val += &#x27;&#x27;;
+    if (typeof val !== 'string') {
+        val += '';
 
         if (console.warn) {
-            console.warn(&#x27;Numeral.js: Value is not string. It has been co-erced to: &#x27;, val);
+            console.warn('Numeral.js: Value is not string. It has been co-erced to: ', val);
         }
     }
 
@@ -786,7 +778,7 @@ string)`
     }
 
     //if val is empty return false
-    if (val === &#x27;&#x27;) {
+    if (val === '') {
         return false;
     }
 
@@ -802,8 +794,8 @@ string)`
     _currSymbol = localeData.currency.symbol;
     _abbrObj = localeData.abbreviations;
     _decimalSep = localeData.delimiters.decimal;
-    if (localeData.delimiters.thousands === &#x27;.&#x27;) {
-        _thousandSep = &#x27;\\.&#x27;;
+    if (localeData.delimiters.thousands === '.') {
+        _thousandSep = '\\.';
     } else {
         _thousandSep = localeData.delimiters.thousands;
     }
@@ -821,27 +813,27 @@ string)`
     temp = val.match(/[^\d]+$/);
     if (temp !== null) {
         val = val.slice(0, -1);
-        if (temp[0] !== _abbrObj.thousand &#x26;&#x26; temp[0] !== _abbrObj.million &#x26;&#x26; temp[0] !== _abbrObj.billion &#x26;&#x26; temp[0] !== _abbrObj
+        if (temp[0] !== _abbrObj.thousand &amp;&amp; temp[0] !== _abbrObj.million &amp;&amp; temp[0] !== _abbrObj.billion &amp;&amp; temp[0] !== _abbrObj
 .trillion) {
             return false;
         }
     }
 
-    _thousandRegEx = new RegExp(_thousandSep + &#x27;{2}&#x27;);
+    _thousandRegEx = new RegExp(_thousandSep + '{2}');
 
     if (!val.match(/[^\d.,]/g)) {
         _valArray = val.split(_decimalSep);
-        if (_valArray.length &#x3e; 2) {
+        if (_valArray.length &gt; 2) {
             return false;
         } else {
-            if (_valArray.length &#x3c; 2) {
-                return ( !! _valArray[0].match(/^\d+.*\d$/) &#x26;&#x26; !_valArray[0].match(_thousandRegEx));
+            if (_valArray.length &lt; 2) {
+                return ( !! _valArray[0].match(/^\d+.*\d$/) &amp;&amp; !_valArray[0].match(_thousandRegEx));
             } else {
                 if (_valArray[0].length === 1) {
-                    return ( !! _valArray[0].match(/^\d+$/) &#x26;&#x26; !_valArray[0].match(_thousandRegEx) &#x26;&#x26; !! _valArray[1].match(/^\d
+                    return ( !! _valArray[0].match(/^\d+$/) &amp;&amp; !_valArray[0].match(_thousandRegEx) &amp;&amp; !! _valArray[1].match(/^\d
 +$/));
                 } else {
-                    return ( !! _valArray[0].match(/^\d+.*\d$/) &#x26;&#x26; !_valArray[0].match(_thousandRegEx) &#x26;&#x26; !! _valArray[1].match(/^\d+$/));
+                    return ( !! _valArray[0].match(/^\d+.*\d$/) &amp;&amp; !_valArray[0].match(_thousandRegEx) &amp;&amp; !! _valArray[1].match(/^\d+$/));
                 }
             }
         }
@@ -862,7 +854,7 @@ string)`
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">zeroFormat = function (format) {
-    options.zeroFormat = typeof(format) === &#x27;string&#x27; ? format : null;
+    options.zeroFormat = typeof(format) === 'string' ? format : null;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -898,7 +890,7 @@ string)`
 
     return args.reduce(function(accum, next) {
         var mn = _.multiplier(next);
-        return accum &#x3e; mn ? accum : mn;
+        return accum &gt; mn ? accum : mn;
     }, 1);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -940,13 +932,13 @@ abs = Math.abs(value);
 
 // see if we should use parentheses for negative number or if we should prefix with a sign
 // if both are present we default to parentheses
-if (numeral._.<span class="apidocCodeKeywordSpan">includes</span>(format, &#x27;(&#x27;)) {
+if (numeral._.<span class="apidocCodeKeywordSpan">includes</span>(format, '(')) {
     negP = true;
-    format = format.replace(/[\(|\)]/g, &#x27;&#x27;);
-} else if (numeral._.includes(format, &#x27;+&#x27;) || numeral._.includes(format, &#x27;-&#x27;)) {
-    signed = numeral._.includes(format, &#x27;+&#x27;) ? format.indexOf(&#x27;+&#x27;) : value &#x3c; 0 ? format.indexOf(&#x27;-&#
+    format = format.replace(/[\(|\)]/g, '');
+} else if (numeral._.includes(format, '+') || numeral._.includes(format, '-')) {
+    signed = numeral._.includes(format, '+') ? format.indexOf('+') : value &lt; 0 ? format.indexOf('-&amp;#
 x27;) : -1;
-    format = format.replace(/[\+|\-]/g, &#x27;&#x27;);
+    format = format.replace(/[\+|\-]/g, '');
 }
 ...</pre></li>
     </ul>
@@ -966,15 +958,15 @@ x27;) : -1;
     <li>example usage<pre class="apidocCodePre">...
 
 // loop through each before symbol
-for (i = 0; i &#x3c; symbols.before.length; i++) {
+for (i = 0; i &lt; symbols.before.length; i++) {
     symbol = symbols.before[i];
 
     switch (symbol) {
-        case &#x27;$&#x27;:
+        case '$':
             output = numeral._.<span class="apidocCodeKeywordSpan">insert</span>(output, locale.currency.symbol, i);
             break;
-        case &#x27; &#x27;:
-            output = numeral._.insert(output, &#x27; &#x27;, i + locale.currency.symbol.length - 1);
+        case ' ':
+            output = numeral._.insert(output, ' ', i + locale.currency.symbol.length - 1);
             break;
     }
 }
@@ -991,7 +983,7 @@ for (i = 0; i &#x3c; symbols.before.length; i++) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isNaN = function (value) {
-    return typeof value === &#x27;number&#x27; &#x26;&#x26; isNaN(value);
+    return typeof value === 'number' &amp;&amp; isNaN(value);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
     unformatFunction,
@@ -999,14 +991,14 @@ for (i = 0; i &#x3c; symbols.before.length; i++) {
 
 if (numeral.isNumeral(input)) {
     value = input.value();
-} else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
+} else if (input === 0 || typeof input === 'undefined') {
     value = 0;
 } else if (input === null || _.<span class="apidocCodeKeywordSpan">isNaN</span>(input)) {
     value = null;
-} else if (typeof input === &#x27;string&#x27;) {
-    if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
+} else if (typeof input === 'string') {
+    if (options.zeroFormat &amp;&amp; input === options.zeroFormat) {
         value = 0;
-    } else if (options.nullFormat &#x26;&#x26; input === options.nullFormat || !input.replace(/[^0-9]+/g, &#x27;&#x27;).length) {
+    } else if (options.nullFormat &amp;&amp; input === options.nullFormat || !input.replace(/[^0-9]+/g, '').length) {
         value = null;
     } else {
 ...</pre></li>
@@ -1022,9 +1014,9 @@ if (numeral.isNumeral(input)) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">multiplier = function (x) {
-    var parts = x.toString().split(&#x27;.&#x27;);
+    var parts = x.toString().split('.');
 
-    return parts.length &#x3c; 2 ? 1 : Math.pow(10, parts[1].length);
+    return parts.length &lt; 2 ? 1 : Math.pow(10, parts[1].length);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
  * multiplier that must be used to normalize an operation involving
@@ -1035,13 +1027,13 @@ correctionFactor: function () {
 
     return args.reduce(function(accum, next) {
         var mn = _.<span class="apidocCodeKeywordSpan">multiplier</span>(next);
-        return accum &#x3e; mn ? accum : mn;
+        return accum &gt; mn ? accum : mn;
     }, 1);
 },
 /**
  * Implementation of toFixed() that treats floats more like decimals
  *
- * Fixes binary rounding issues (eg. (0.615).toFixed(2) === &#x27;0.61&#x27;) that present
+ * Fixes binary rounding issues (eg. (0.615).toFixed(2) === '0.61') that present
 ...</pre></li>
     </ul>
 
@@ -1059,12 +1051,12 @@ correctionFactor: function () {
         negP = false,
         optDec = false,
         leadingCount = 0,
-        abbr = &#x27;&#x27;,
+        abbr = '',
         trillion = 1000000000000,
         billion = 1000000000,
         million = 1000000,
         thousand = 1000,
-        decimal = &#x27;&#x27;,
+        decimal = '',
         neg = false,
         abbrForce, // force abbreviation
         abs,
@@ -1084,40 +1076,40 @@ correctionFactor: function () {
 
     // see if we should use parentheses for negative number or if we should prefix with a sign
     // if both are present we default to parentheses
-    if (numeral._.includes(format, &#x27;(&#x27;)) {
+    if (numeral._.includes(format, '(')) {
         negP = true;
-        format = format.replace(/[\(|\)]/g, &#x27;&#x27;);
-    } else if (numeral._.includes(format, &#x27;+&#x27;) || numeral._.includes(format, &#x27;-&#x27;)) {
-        signed = numeral._.includes(format, &#x27;+&#x27;) ? format.indexOf(&#x27;+&#x27;) : value &#x3c; 0 ? format.indexOf(&#x27;-&#x27;) : -1;
-        format = format.replace(/[\+|\-]/g, &#x27;&#x27;);
+        format = format.replace(/[\(|\)]/g, '');
+    } else if (numeral._.includes(format, '+') || numeral._.includes(format, '-')) {
+        signed = numeral._.includes(format, '+') ? format.indexOf('+') : value &lt; 0 ? format.indexOf('-') : -1;
+        format = format.replace(/[\+|\-]/g, '');
     }
 
     // see if abbreviation is wanted
-    if (numeral._.includes(format, &#x27;a&#x27;)) {
+    if (numeral._.includes(format, 'a')) {
         abbrForce = format.match(/a(k|m|b|t)?/);
 
         abbrForce = abbrForce ? abbrForce[1] : false;
 
         // check for space before abbreviation
-        if (numeral._.includes(format, &#x27; a&#x27;)) {
-            abbr = &#x27; &#x27;;
+        if (numeral._.includes(format, ' a')) {
+            abbr = ' ';
         }
 
-        format = format.replace(new RegExp(abbr + &#x27;a[kmbt]?&#x27;), &#x27;&#x27;);
+        format = format.replace(new RegExp(abbr + 'a[kmbt]?'), '');
 
-        if (abs &#x3e;= trillion &#x26;&#x26; !abbrForce || abbrForce === &#x27;t&#x27;) {
+        if (abs &gt;= trillion &amp;&amp; !abbrForce || abbrForce === 't') {
             // trillion
             abbr += locale.abbreviations.trillion;
             value = value / trillion;
-        } else if (abs &#x3c; trillion &#x26;&#x26; abs &#x3e;= billion &#x26;&#x26; !abbrForce || abbrForce === &#x27;b&#x27;) {
+        } else if (abs &lt; trillion &amp;&amp; abs &gt;= billion &amp;&amp; !abbrForce || abbrForce === 'b') {
             // billion
             abbr += locale.abbreviations.billion;
             value = value / billion;
-        } else if (abs &#x3c; billion &#x26;&#x26; abs &#x3e;= million &#x26;&#x26; !abbrForce || abbrForce === &#x27;m&#x27;) {
+        } else if (abs &lt; billion &amp;&amp; abs &gt;= million &amp;&amp; !abbrForce || abbrForce === 'm') {
             // million
             abbr += locale.abbreviations.million;
             value = value / million;
-        } else if (abs &#x3c; million &#x26;&#x26; abs &#x3e;= thousand &#x26;&#x26; !abbrForce || abbrForce === &#x27;k&#x27;) {
+        } else if (abs &lt; million &amp;&amp; abs &gt;= thousand &amp;&amp; !abbrForce || abbrForce === 'k') {
             // thousand
             abbr += locale.abbreviations.thousand;
             value = value / thousand;
@@ -1125,44 +1117,44 @@ correctionFactor: function () {
     }
 
     // check for optional decimals
-    if (numeral._.includes(format, &#x27;[.]&#x27;)) {
+    if (numeral._.includes(format, '[.]')) {
         optDec = true;
-        format = format.replace(&#x27;[.]&#x27;, &#x27;.&#x27;);
+        format = format.replace('[.]', '.');
     }
 
     // break number and format
-    int = value.toString().split(&#x27;.&#x27;)[0];
-    precision = format.split(&#x27;.&#x27;)[1];
-    thousands = format.indexOf(&#x27;,&#x27;);
-    leadingCount = (format.split(&#x27;.&#x27;)[0].split(&#x27;,&#x27;)[0].match(/0/g) || []).length;
+    int = value.toString().split('.')[0];
+    precision = format.split('.')[1];
+    thousands = format.indexOf(',');
+    leadingCount = (format.split('.')[0].split(',')[0].match(/0/g) || []).length;
 
     if (precision) {
-        if (numeral._.includes(precision, &#x27;[&#x27;)) {
-            precision = precision.replace(&#x27;]&#x27;, &#x27;&#x27;);
-            precision = precision.split(&#x27;[&#x27;);
+        if (numeral._.includes(precision, '[')) {
+            precision = precision.replace(']', '');
+            precision = precision.split('[');
             decimal = numeral._.toFixed(value, (precision[0].length + precision[1].length), roundingFunction, precision[1].length
 );
         } else {
             decimal = numeral._.toFixed(value, precision.length, roundingFunction);
         }
 
-        int = decimal.split(&#x27;.&#x27;)[0];
+        int = decimal.split('.')[0];
 
-        if (numeral._.includes(decimal, &#x27;.&#x27;)) {
-            decimal = locale.delimiters.decimal + decimal.split(&#x27;.&#x27;)[1];
+        if (numeral._.includes(decimal, '.')) {
+            decimal = locale.delimiters.decimal + decimal.split('.')[1];
         } else {
-            decimal = &#x27;&#x27;;
+            decimal = '';
         }
 
-        if (optDec &#x26;&#x26; Number(decimal.slice(1)) === 0) {
-            decimal = &#x27;&#x27;;
+        if (optDec &amp;&amp; Number(decimal.slice(1)) === 0) {
+            decimal = '';
         }
     } else {
         int = numeral._.toFixed(value, 0, roundingFunction);
     }
 
     // check abbreviation again after rounding
-    if (abbr &#x26;&#x26; !abbrForce &#x26;&#x26; Number(int) &#x3e;= 1000 &#x26;&#x26; abbr !== locale.abbreviations.trillion) {
+    if (abbr &amp;&amp; !abbrForce &amp;&amp; Number(int) &gt;= 1000 &amp;&amp; abbr !== locale.abbreviations.trillion) {
         int = String(Number(int) / 1000);
 
         switch (abbr) {
@@ -1181,16 +1173,16 @@ output;
                 value = value * 10000;
 
                 // check for space before BPS
-                format = format.replace(/\s?BPS/, &#x27;&#x27;);
+                format = format.replace(/\s?BPS/, '');
 
                 output = numeral._.<span class="apidocCodeKeywordSpan">numberToFormat</span>(value, format, roundingFunction);
 
-                if (numeral._.includes(output, &#x27;)&#x27;)) {
-output = output.split(&#x27;&#x27;);
+                if (numeral._.includes(output, ')')) {
+output = output.split('');
 
-output.splice(-1, 0, space + &#x27;BPS&#x27;);
+output.splice(-1, 0, space + 'BPS');
 
-output = output.join(&#x27;&#x27;);
+output = output.join('');
 ...</pre></li>
     </ul>
 
@@ -1205,32 +1197,32 @@ output = output.join(&#x27;&#x27;);
     <ul>
     <li>description and source-code<pre class="apidocCodePre">reduce = function (array, callback) {
     if (this === null) {
-        throw new TypeError(&#x27;Array.prototype.reduce called on null or undefined&#x27;);
+        throw new TypeError('Array.prototype.reduce called on null or undefined');
     }
 
-    if (typeof callback !== &#x27;function&#x27;) {
-        throw new TypeError(callback + &#x27; is not a function&#x27;);
+    if (typeof callback !== 'function') {
+        throw new TypeError(callback + ' is not a function');
     }
 
     var t = Object(array),
-        len = t.length &#x3e;&#x3e;&#x3e; 0,
+        len = t.length &gt;&gt;&gt; 0,
         k = 0,
         value;
 
     if (arguments.length === 3) {
         value = arguments[2];
     } else {
-        while (k &#x3c; len &#x26;&#x26; !(k in t)) {
+        while (k &lt; len &amp;&amp; !(k in t)) {
             k++;
         }
 
-        if (k &#x3e;= len) {
-            throw new TypeError(&#x27;Reduce of empty array with no initial value&#x27;);
+        if (k &gt;= len) {
+            throw new TypeError('Reduce of empty array with no initial value');
         }
 
         value = t[k++];
     }
-    for (; k &#x3c; len; k++) {
+    for (; k &lt; len; k++) {
         if (k in t) {
             value = callback(value, t[k], k, t);
         }
@@ -1247,7 +1239,7 @@ correctionFactor: function () {
 
     return args.<span class="apidocCodeKeywordSpan">reduce</span>(function(accum, next) {
         var mn = _.multiplier(next);
-        return accum &#x3e; mn ? accum : mn;
+        return accum &gt; mn ? accum : mn;
     }, 1);
 },
 /**
@@ -1279,19 +1271,19 @@ correctionFactor: function () {
         i,
         regexp;
 
-    if (options.zeroFormat &#x26;&#x26; string === options.zeroFormat) {
+    if (options.zeroFormat &amp;&amp; string === options.zeroFormat) {
         value = 0;
-    } else if (options.nullFormat &#x26;&#x26; string === options.nullFormat || !string.replace(/[^0-9]+/g, &#x27;&#x27;).length) {
+    } else if (options.nullFormat &amp;&amp; string === options.nullFormat || !string.replace(/[^0-9]+/g, '').length) {
         value = null;
     } else {
         value = 1;
 
-        if (locale.delimiters.decimal !== &#x27;.&#x27;) {
-            string = string.replace(/\./g, &#x27;&#x27;).replace(locale.delimiters.decimal, &#x27;.&#x27;);
+        if (locale.delimiters.decimal !== '.') {
+            string = string.replace(/\./g, '').replace(locale.delimiters.decimal, '.');
         }
 
         for (abbreviation in abbreviations) {
-            regexp = new RegExp(&#x27;[^a-zA-Z]&#x27; + locale.abbreviations[abbreviation] + &#x27;(?:\\)|(\\&#x27; + locale.currency.symbol + &#x27;)?(?:\\))?)?$&#x27;);
+            regexp = new RegExp('[^a-zA-Z]' + locale.abbreviations[abbreviation] + '(?:\\)|(\\' + locale.currency.symbol + ')?(?:\\))?)?$');
 
             if (stringOriginal.match(regexp)) {
                 value *= Math.pow(10, abbreviations[abbreviation]);
@@ -1300,10 +1292,10 @@ correctionFactor: function () {
         }
 
         // check for negative number
-        value *= (string.split(&#x27;-&#x27;).length + Math.min(string.split(&#x27;(&#x27;).length - 1, string.split(&#x27;)&#x27;).length - 1)) % 2 ? 1 : -1;
+        value *= (string.split('-').length + Math.min(string.split('(').length - 1, string.split(')').length - 1)) % 2 ? 1 : -1;
 
         // remove non numbers
-        string = string.replace(/[^0-9\.]+/g, &#x27;&#x27;);
+        string = string.replace(/[^0-9\.]+/g, '');
 
         value *= Number(string);
     }
@@ -1312,7 +1304,7 @@ correctionFactor: function () {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
                 } else {
-                    output = output + space + &#x27;BPS&#x27;;
+                    output = output + space + 'BPS';
                 }
 
                 return output;
@@ -1335,7 +1327,7 @@ correctionFactor: function () {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">toFixed = function (value, maxDecimals, roundingFunction, optionals) {
-    var splitValue = value.toString().split(&#x27;.&#x27;),
+    var splitValue = value.toString().split('.'),
         minDecimals = maxDecimals - (optionals || 0),
         boundedPrecision,
         optionalsRegExp,
@@ -1352,32 +1344,32 @@ correctionFactor: function () {
     power = Math.pow(10, boundedPrecision);
 
     // Multiply up by precision, round accurately, then divide and use native toFixed():
-    output = (roundingFunction(value + &#x27;e+&#x27; + boundedPrecision) / power).toFixed(boundedPrecision);
+    output = (roundingFunction(value + 'e+' + boundedPrecision) / power).toFixed(boundedPrecision);
 
-    if (optionals &#x3e; maxDecimals - boundedPrecision) {
-        optionalsRegExp = new RegExp(&#x27;\\.?0{1,&#x27; + (optionals - (maxDecimals - boundedPrecision)) + &#x27;}$&#x27;);
-        output = output.replace(optionalsRegExp, &#x27;&#x27;);
+    if (optionals &gt; maxDecimals - boundedPrecision) {
+        optionalsRegExp = new RegExp('\\.?0{1,' + (optionals - (maxDecimals - boundedPrecision)) + '}$');
+        output = output.replace(optionalsRegExp, '');
     }
 
     return output;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-            thousands = format.indexOf(&#x27;,&#x27;);
-            leadingCount = (format.split(&#x27;.&#x27;)[0].split(&#x27;,&#x27;)[0].match(/0/g) || []).length;
+            thousands = format.indexOf(',');
+            leadingCount = (format.split('.')[0].split(',')[0].match(/0/g) || []).length;
 
             if (precision) {
-if (numeral._.includes(precision, &#x27;[&#x27;)) {
-    precision = precision.replace(&#x27;]&#x27;, &#x27;&#x27;);
-    precision = precision.split(&#x27;[&#x27;);
+if (numeral._.includes(precision, '[')) {
+    precision = precision.replace(']', '');
+    precision = precision.split('[');
     decimal = numeral._.<span class="apidocCodeKeywordSpan">toFixed</span>(value, (precision[0].length + precision[1].length), roundingFunction
 , precision[1].length);
 } else {
     decimal = numeral._.toFixed(value, precision.length, roundingFunction);
 }
 
-int = decimal.split(&#x27;.&#x27;)[0];
+int = decimal.split('.')[0];
 
-if (numeral._.includes(decimal, &#x27;.&#x27;)) {
+if (numeral._.includes(decimal, '.')) {
 ...</pre></li>
     </ul>
 
@@ -1481,9 +1473,9 @@ if (numeral._.includes(decimal, &#x27;.&#x27;)) {
     roundingFunction = roundingFunction || Math.round;
 
     // format based on value
-    if (value === 0 &#x26;&#x26; options.zeroFormat !== null) {
+    if (value === 0 &amp;&amp; options.zeroFormat !== null) {
         output = options.zeroFormat;
-    } else if (value === null &#x26;&#x26; options.nullFormat !== null) {
+    } else if (value === null &amp;&amp; options.nullFormat !== null) {
         output = options.nullFormat;
     } else {
         for (kind in formats) {
@@ -1505,7 +1497,7 @@ if (numeral._.includes(decimal, &#x27;.&#x27;)) {
 
 ### 1.5.1
 
-Bug fix: Make sure values aren&#x27;t changed during formatting
+Bug fix: Make sure values aren't changed during formatting
 
 ### 1.5.0
 
@@ -1571,17 +1563,17 @@ Bug fix: Fix bug while unformatting ordinals
     return this;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-        platform: &#x27;Windows 10&#x27;
+        platform: 'Windows 10'
     }
 };
 
-process.env.SAUCE_USERNAME = &#x27;numeraljs&#x27;;
-process.env.SAUCE_ACCESS_KEY = &#x27;5506968c-cfdc-4797-ba75-294620ad475f&#x27;;
+process.env.SAUCE_USERNAME = 'numeraljs';
+process.env.SAUCE_ACCESS_KEY = '5506968c-cfdc-4797-ba75-294620ad475f';
 
 config.<span class="apidocCodeKeywordSpan">set</span>({
     reporters: [
-        &#x27;mocha&#x27;,
-        &#x27;saucelabs&#x27;
+        'mocha',
+        'saucelabs'
     ],
     browserDisconnectTimeout : 10000,
     browserNoActivityTimeout: 120000,
@@ -1622,7 +1614,7 @@ config.<span class="apidocCodeKeywordSpan">set</span>({
 };
 
 /************************************
-    Default Locale &#x26;&#x26; Format
+    Default Locale &amp;&amp; Format
 ************************************/
 ...</pre></li>
     </ul>
@@ -1648,12 +1640,12 @@ var value,
 
 if (numeral.isNumeral(input)) {
     value = input.<span class="apidocCodeKeywordSpan">value</span>();
-} else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
+} else if (input === 0 || typeof input === 'undefined') {
     value = 0;
 } else if (input === null || _.isNaN(input)) {
     value = null;
-} else if (typeof input === &#x27;string&#x27;) {
-    if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
+} else if (typeof input === 'string') {
+    if (options.zeroFormat &amp;&amp; input === options.zeroFormat) {
         value = 0;
 ...</pre></li>
     </ul>
@@ -1680,21 +1672,21 @@ if (numeral.isNumeral(input)) {
 
     if (numeral.isNumeral(input)) {
         value = input.value();
-    } else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
+    } else if (input === 0 || typeof input === 'undefined') {
         value = 0;
     } else if (input === null || _.isNaN(input)) {
         value = null;
-    } else if (typeof input === &#x27;string&#x27;) {
-        if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
+    } else if (typeof input === 'string') {
+        if (options.zeroFormat &amp;&amp; input === options.zeroFormat) {
             value = 0;
-        } else if (options.nullFormat &#x26;&#x26; input === options.nullFormat || !input.replace(/[^0-9]+/g, &#x27;&#x27;).length) {
+        } else if (options.nullFormat &amp;&amp; input === options.nullFormat || !input.replace(/[^0-9]+/g, '').length) {
             value = null;
         } else {
             for (kind in formats) {
-                regexp = typeof formats[kind].regexps.unformat === &#x27;function&#x27; ? formats[kind].regexps.unformat() : formats[kind].
+                regexp = typeof formats[kind].regexps.unformat === 'function' ? formats[kind].regexps.unformat() : formats[kind].
 regexps.unformat;
 
-                if (regexp &#x26;&#x26; input.match(regexp)) {
+                if (regexp &amp;&amp; input.match(regexp)) {
                     unformatFunction = formats[kind].unformat;
 
                     break;
@@ -1724,7 +1716,7 @@ regexps.unformat;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">defaultFormat = function (format) {
-    options.defaultFormat = typeof(format) === &#x27;string&#x27; ? format : &#x27;0.0&#x27;;
+    options.defaultFormat = typeof(format) === 'string' ? format : '0.0';
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1751,12 +1743,12 @@ var value,
 
 if (numeral.<span class="apidocCodeKeywordSpan">isNumeral</span>(input)) {
     value = input.value();
-} else if (input === 0 || typeof input === &#x27;undefined&#x27;) {
+} else if (input === 0 || typeof input === 'undefined') {
     value = 0;
 } else if (input === null || _.isNaN(input)) {
     value = null;
-} else if (typeof input === &#x27;string&#x27;) {
-    if (options.zeroFormat &#x26;&#x26; input === options.zeroFormat) {
+} else if (typeof input === 'string') {
+    if (options.zeroFormat &amp;&amp; input === options.zeroFormat) {
 ...</pre></li>
     </ul>
 
@@ -1791,7 +1783,7 @@ try {
 _currSymbol = localeData.currency.symbol;
 _abbrObj = localeData.abbreviations;
 _decimalSep = localeData.delimiters.decimal;
-if (localeData.delimiters.thousands === &#x27;.&#x27;) {
+if (localeData.delimiters.thousands === '.') {
 ...</pre></li>
     </ul>
 
@@ -1812,13 +1804,13 @@ if (localeData.delimiters.thousands === &#x27;.&#x27;) {
     key = key.toLowerCase();
 
     if (!locales[key]) {
-        throw new Error(&#x27;Unknown locale : &#x27; + key);
+        throw new Error('Unknown locale : ' + key);
     }
 
     return locales[key];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-if (val === &#x27;&#x27;) {
+if (val === '') {
     return false;
 }
 
@@ -1846,7 +1838,7 @@ _abbrObj = localeData.abbreviations;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">nullFormat = function (format) {
-    options.nullFormat = typeof(format) === &#x27;string&#x27; ? format : null;
+    options.nullFormat = typeof(format) === 'string' ? format : null;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1863,11 +1855,11 @@ _abbrObj = localeData.abbreviations;
     <li>description and source-code<pre class="apidocCodePre">register = function (type, name, format) {
     name = name.toLowerCase();
 
-    if (this[type + &#x27;s&#x27;][name]) {
-        throw new TypeError(name + &#x27; &#x27; + type + &#x27; already registered.&#x27;);
+    if (this[type + 's'][name]) {
+        throw new TypeError(name + ' ' + type + ' already registered.');
     }
 
-    this[type + &#x27;s&#x27;][name] = format;
+    this[type + 's'][name] = format;
 
     return format;
 }</pre></li>
@@ -1881,8 +1873,7 @@ custom formats.
 Breaking change / Feature: All formats are now separate files.  This makes it easy to create custom formats, and will also allow
  for custom builds with only certain formats.  (Note: The built numeral.js still contains all formats in the repo).
 
-Breaking change / Feature: All formats and locales are now loaded using `numeral.<span class="apidocCodeKeywordSpan">register</span
->(type, name, {})`
+Breaking change / Feature: All formats and locales are now loaded using `numeral.<span class="apidocCodeKeywordSpan">register</span>(type, name, {})`
 
 Breaking change: All `language` now renamed to `locale` and standardized to all lowercase filenames
 
@@ -1930,11 +1921,11 @@ string)`
         temp;
 
     //coerce val to string
-    if (typeof val !== &#x27;string&#x27;) {
-        val += &#x27;&#x27;;
+    if (typeof val !== 'string') {
+        val += '';
 
         if (console.warn) {
-            console.warn(&#x27;Numeral.js: Value is not string. It has been co-erced to: &#x27;, val);
+            console.warn('Numeral.js: Value is not string. It has been co-erced to: ', val);
         }
     }
 
@@ -1947,7 +1938,7 @@ string)`
     }
 
     //if val is empty return false
-    if (val === &#x27;&#x27;) {
+    if (val === '') {
         return false;
     }
 
@@ -1963,8 +1954,8 @@ string)`
     _currSymbol = localeData.currency.symbol;
     _abbrObj = localeData.abbreviations;
     _decimalSep = localeData.delimiters.decimal;
-    if (localeData.delimiters.thousands === &#x27;.&#x27;) {
-        _thousandSep = &#x27;\\.&#x27;;
+    if (localeData.delimiters.thousands === '.') {
+        _thousandSep = '\\.';
     } else {
         _thousandSep = localeData.delimiters.thousands;
     }
@@ -1982,27 +1973,27 @@ string)`
     temp = val.match(/[^\d]+$/);
     if (temp !== null) {
         val = val.slice(0, -1);
-        if (temp[0] !== _abbrObj.thousand &#x26;&#x26; temp[0] !== _abbrObj.million &#x26;&#x26; temp[0] !== _abbrObj.billion &#x26;&#x26; temp[0] !== _abbrObj
+        if (temp[0] !== _abbrObj.thousand &amp;&amp; temp[0] !== _abbrObj.million &amp;&amp; temp[0] !== _abbrObj.billion &amp;&amp; temp[0] !== _abbrObj
 .trillion) {
             return false;
         }
     }
 
-    _thousandRegEx = new RegExp(_thousandSep + &#x27;{2}&#x27;);
+    _thousandRegEx = new RegExp(_thousandSep + '{2}');
 
     if (!val.match(/[^\d.,]/g)) {
         _valArray = val.split(_decimalSep);
-        if (_valArray.length &#x3e; 2) {
+        if (_valArray.length &gt; 2) {
             return false;
         } else {
-            if (_valArray.length &#x3c; 2) {
-                return ( !! _valArray[0].match(/^\d+.*\d$/) &#x26;&#x26; !_valArray[0].match(_thousandRegEx));
+            if (_valArray.length &lt; 2) {
+                return ( !! _valArray[0].match(/^\d+.*\d$/) &amp;&amp; !_valArray[0].match(_thousandRegEx));
             } else {
                 if (_valArray[0].length === 1) {
-                    return ( !! _valArray[0].match(/^\d+$/) &#x26;&#x26; !_valArray[0].match(_thousandRegEx) &#x26;&#x26; !! _valArray[1].match(/^\d
+                    return ( !! _valArray[0].match(/^\d+$/) &amp;&amp; !_valArray[0].match(_thousandRegEx) &amp;&amp; !! _valArray[1].match(/^\d
 +$/));
                 } else {
-                    return ( !! _valArray[0].match(/^\d+.*\d$/) &#x26;&#x26; !_valArray[0].match(_thousandRegEx) &#x26;&#x26; !! _valArray[1].match(/^\d+$/));
+                    return ( !! _valArray[0].match(/^\d+.*\d$/) &amp;&amp; !_valArray[0].match(_thousandRegEx) &amp;&amp; !! _valArray[1].match(/^\d+$/));
                 }
             }
         }
@@ -2023,7 +2014,7 @@ string)`
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">zeroFormat = function (format) {
-    options.zeroFormat = typeof(format) === &#x27;string&#x27; ? format : null;
+    options.zeroFormat = typeof(format) === 'string' ? format : null;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -2049,3 +2040,4 @@ string)`
     ]
 </div>
 </div>
+</body></html>
