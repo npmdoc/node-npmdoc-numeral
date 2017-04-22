@@ -21,34 +21,15 @@
 ```json
 
 {
-    "name": "numeral",
-    "version": "2.0.6",
-    "description": "Format and manipulate numbers.",
-    "homepage": "http://numeraljs.com",
     "author": {
         "name": "Adam Draper",
         "url": "http://github.com/adamwdraper"
     },
-    "keywords": [
-        "numeral",
-        "number",
-        "format",
-        "time",
-        "money",
-        "percentage"
-    ],
-    "main": "./numeral.js",
-    "engines": {
-        "node": "*"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/adamwdraper/Numeral-js"
-    },
     "bugs": {
         "url": "https://github.com/adamwdraper/Numeral-js/issues"
     },
-    "license": "MIT",
+    "dependencies": {},
+    "description": "Format and manipulate numbers.",
     "devDependencies": {
         "chai": "^3.5.0",
         "grunt": "latest",
@@ -71,10 +52,43 @@
         "mocha": "^3.1.2",
         "uglify-js": "latest"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "4ad080936d443c2561aed9f2197efffe25f4e506",
+        "tarball": "https://registry.npmjs.org/numeral/-/numeral-2.0.6.tgz"
+    },
+    "ender": "./ender.js",
+    "engines": {
+        "node": "*"
+    },
+    "gitHead": "30956925463d19d4cf84488dcd8005da40cf9728",
+    "homepage": "http://numeraljs.com",
+    "keywords": [
+        "numeral",
+        "number",
+        "format",
+        "time",
+        "money",
+        "percentage"
+    ],
+    "license": "MIT",
+    "main": "./numeral.js",
+    "maintainers": [
+        {
+            "name": "adamwdraper"
+        }
+    ],
+    "name": "numeral",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/adamwdraper/Numeral-js.git"
+    },
     "scripts": {
         "test": "grunt"
     },
-    "ender": "./ender.js"
+    "version": "2.0.6",
+    "bin": {}
 }
 ```
 
